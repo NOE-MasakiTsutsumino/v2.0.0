@@ -43,6 +43,9 @@ class Valid_logger():
         # 作成したログメッセージのフォーマットをハンドラに設定
         stream_handler.setFormatter(formatter)
 
+        # コンソール出力するログレベルを設定
+        stream_handler.setLevel(logging.ERROR)
+
         # コンソール出力ハンドラをロガーに追加
         logger.addHandler(stream_handler)
 
@@ -55,8 +58,8 @@ class Valid_logger():
         # ログをファイル出力する設定
         file_handler = logging.FileHandler(file, encoding='utf-8')
 
-        # ファイル出力するログレベルをDEBUG以上に設定
-        file_handler.setLevel(logging.DEBUG)
+        # ファイル出力するログレベルを設定
+        file_handler.setLevel(logging.INFO)
 
         # 作成したログメッセージのフォーマットをハンドラに設定
         file_handler.setFormatter(formatter)

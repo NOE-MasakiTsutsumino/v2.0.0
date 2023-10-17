@@ -29,7 +29,7 @@ class Settings():
         name                            : 測定局名称 str
         execution                       : 異常検知実行するか true false
         calibrated_time                 : use_common_calibrated_timeがtrueであれば使われない校正完了時間 "yyyy-mm-dd hh:mm:ss"
-        *target_frequency               : オプション 測定局ごとに記入があればこちらを使う 対象オクターブバンド周波数 [int,int...]
+        *target_frequency               : optional 測定局ごとに記入があればこちらを使う 対象オクターブバンド周波数 [int,int...]
         """
 
     def __init__(self, settings_path: Path):

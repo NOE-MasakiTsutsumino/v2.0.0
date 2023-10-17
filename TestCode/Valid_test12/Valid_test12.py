@@ -2,9 +2,9 @@ import argparse
 from pathlib import Path
 from settings import Settings
 from logger import Valid_logger
-from detecter import Learning, Anormaly, Sensitiviy
-
-SETTING_PATH = Path(r"D:\Develop\SoundValid\v2.0.0\TestCode\Valid_test12\NORMAL_PARAMETERS.json")
+from anormaly_detecter import Anormaly_Detecter
+from sensitivity_detecter import Sensitiviy_Detecter
+SETTING_PATH = Path(r"D:\Develop\SoundValid\v2.0.0\TestCode\Valid_test12\valid_test12_settings.json")
 
 def main():
 
@@ -27,15 +27,19 @@ def main():
         logger.app.critical(msg)
         raise Exception(msg)
 
-    # 設定ファイルの情報から異常検知の準備
-    ln = Learning(settings, logger)
-    normal_params = ln.fit()
+    # 騒音計マイク故障検知クラス
+    an = Anormaly_Detecter(settings, logger)
+    # 正常パラメータ読み込み
+    an.load_normal_parameters()
+    # 異常検知実行
+    an.do_valid()
 
-    an = Anormaly(settings, logger, normal_params)
-    an.do_valid_anormaly()
-
-    sn = Sensitiviy(settings, logger, normal_params)
-    sn.do_valid_sensitivity()
+    # 騒音計マイク感度異常検知クラス
+    sn = Sensitiviy_Detecter(settings, logger)
+    # 正常パラメータ読み込み
+    sn.load_normal_parameters()
+    # 異常検知実行
+    msg = sn.do_valid()
 
 
 if __name__ == "__main__":

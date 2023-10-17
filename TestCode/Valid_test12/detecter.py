@@ -5,6 +5,7 @@ from signals import SignalProcesses
 import numpy as np
 from scipy import stats
 from math import floor
+import json
 
 class Detecter(object):
 
@@ -16,22 +17,31 @@ class Detecter(object):
 
         # 全機能共通設定
         self.wave_dir = settings.wave_dir
-        self.normaly_sample_size = settings.common["normaly_sample_size"]
-        self.co_target_frequency  = list(settings.common['target_frequency'])
-        self.recurse_days = settings.common["recurse_days"]
-        self.day_list = self._get_target_days()
+        self.logger.app.debug(f"wave_dir:{self.wave_dir}")
 
-        #! stidに重複もしくは不正がないかチェックする処理を作る
+        self.normaly_sample_size = settings.common["normaly_sample_size"]
+        self.logger.app.debug(f"normaly_sample_size:{self.normaly_sample_size}")
+
+        self.co_target_frequency  = list(settings.common['target_frequency'])
+        self.logger.app.debug(f"co_target_frequency':{self.co_target_frequency}")
+
+        self.recurse_days = settings.common["recurse_days"]
+        self.logger.app.debug(f"recurse_days':{self.recurse_days}")
+
+        self.day_list = self._get_target_days()
+        self.logger.app.debug(f"target_days':{self.day_list}")
+
+        #TODO  stidに重複もしくは不正がないかチェックする処理を作る
         self.station_settings = settings.station
 
-        #! 実行対象の測定局が存在しない場合に終了させる処理を作る
+        # 実行対象の測定局が存在しない場合に終了する
         self.target_station_list = self.get_target_station_list(self.station_settings)
         if not self.target_station_list:
             msg = "実行対象の測定局がないので終了します(設定ファイルのexecution:trueなし)"
             self.logger.app.info(msg)
             exit()
 
-        self.logger.app.debug("Detecter class instantized")
+        self.logger.app.info("Detecter class instantized")
 
     def get_target_station_list(self, station_settings):
 
@@ -148,285 +158,21 @@ class Detecter(object):
 
         return day_list
 
-class Anormaly(Detecter):
+    def load_normal_parameters(self):
 
-    """
-    故障診断機能クラス
-    """
+        filename = "NORMAL_PARAMETERS.json"
+        try:
+            with open(filename) as f:
+                data = json.load(f)
+                self.normal_params = data
+                self.logger.app.info("正常パラメータ読み込み完了")
+        except FileNotFoundError as error:
+                self.logger.app.critical(error)
+                exit()
 
-    def __init__(self, settings, logger, normal_parameters):
+    def _check_calculated_norm(self, stid, norma_param):
 
-        super().__init__(settings, logger)
-        self.normal_parameters = normal_parameters
-        self.co_tolerance  = float(settings.common['anormaly_tolerance'])
-        self.recurse_days = settings.common["recurse_days"]
-
-        self.logger.app.debug("Anormaly")
-
-
-    def _get_parm_freq(self, signal, oct_freq_mask):
-        """
-        """
-
-        sub_ch = signal[:,0]
-        slm_ch = signal[:,1]
-        slm_lv = self.sp.cal_CPB_level2(slm_ch, oct_freq_mask)
-        sub_lv = self.sp.cal_CPB_level2(sub_ch, oct_freq_mask)
-
-        parm = slm_lv - sub_lv
-
-        return parm
-
-
-    def _load_station_settings(self, stid):
-
-        if "target_frequency" in self.station_settings["id"==stid]:
-            freqs  = self.station_settings["id" == stid]["target_frequency"]
-        else:
-            freqs = self.co_target_frequency
-
-        if "anormaly_tolerance" in self.station_settings["id"==stid]:
-            t = self.station_settings["id" == stid]["anormaly_tolerance"]
-        else:
-            t = self.co_tolerance
-
-        return freqs, t
-
-
-    def _judge_anormaly(self, stid, freq, data, tolerance):
-        """
-        異常検知の実行
-        """
-
-        if (self.normal_parameters[stid]["norm_interval_lower"][str(freq)] - tolerance) > data:
-            return 1
-        elif (self.normal_parameters[stid]["norm_interval_upper"][str(freq)]) + tolerance < data:
-            return 2
-        else:
+        if stid not in norma_param:
             return False
-
-
-    def _do_valid_station(self, stid):
-        """
-        測定局別処理 故障診断
-        """
-
-        msg_list = []
-
-        # 測定局設定読込
-        freqs, tolerance = self._load_station_settings(stid)
-
-        # バンドパスフィルタ
-        oct_freq_mask = {}
-        for freq in freqs:
-            oct_freq_mask[str(freq)] = self.sp.make_oct_mask(freq)
-
-        # 日別処理
-        for day in self.day_list:
-
-            wave_file_list = []
-            target_dir = os.path.join(self.wave_dir, day.strftime('%Y%m'), stid, day.strftime('%Y%m%d'))
-
-            if os.path.isdir(target_dir) == True:
-                wave_file_list += glob.glob(os.path.join(target_dir,'**','*.WAV'),recursive = True)
-            else:
-                #! Warning
-                msg = "ディレクトリが存在しません,故障診断できませんでした:{}:{}", format(stid, target_dir)
-                self.logger.app.warning(msg)
-                return False
-
-            if wave_file_list == []:
-                #! Warning
-                msg  = "対象期間内にWAVEファイルが存在しません,故障診断できませんでした:{}:{}", format(stid, day)
-                self.logger.app.warning(msg)
-                return False
-
-            # ファイルごとの処理
-            for file in wave_file_list:
-                signal = self.sp.wav_load(file)
-                anorm_freqs = []
-                for freq in freqs:
-                    param = self._get_parm_freq(signal, oct_freq_mask[str(freq)])
-                    if param != False:
-                        jadge = self._judge_anormaly(stid, freq, param, tolerance)
-                        if jadge != False:
-                            anorm_freqs.append(freq)
-                    else:
-                        break
-                if anorm_freqs != []:
-                    # msg_list.append("anormly-{}-[{}]-{}"
-                    #                 .format(stid, ",".join(map(str, anorm_freqs)), os.path.basename(file)))
-                    msg = "anormly-{}-[{}]-{}".format(stid, ",".join(map(str, anorm_freqs)), os.path.basename(file))
-                    self.logger.result.info(msg)
-
-            self.logger.app.debug("anormary-{}-complete".format(day))
-
-        return msg_list
-
-
-    def do_valid_anormaly(self):
-
-        msg_list = []
-        for stid in self.target_station_list:
-            station_msg = self._do_valid_station(stid)
-            if station_msg != []:
-                msg_list.append(station_msg)
-            self.logger.app.debug("anormary-{}-complete".format(stid))
-
-        return msg_list
-
-class Sensitiviy(Detecter):
-
-    """
-    騒音計マイク感度異常診断機能クラス
-    """
-
-    def __init__(self, settings, logger, normal_parameters):
-
-        super().__init__(settings, logger)
-        self.normal_parameters = normal_parameters
-        self.co_tolerance  = float(settings.common["sensitivity_tolerance"])
-        self.sample_reload_limit_percent_of_day = float(settings.common["sample_reload_limit_percent_of_day"])
-        self.sample_reload_limit_number = floor(self.normaly_sample_size * self.sample_reload_limit_percent_of_day /100.0)
-
-        self.logger.app.debug("Sensitiviy")
-
-
-    def do_valid_sensitivity(self):
-
-        msg_list = []
-        for stid in self.target_station_list:
-            station_msg = self._do_valid_station(stid)
-            if station_msg != []:
-                msg_list.append(station_msg)
-            self.logger.app.debug("sensitiviy-{}-complete".format(stid))
-
-        return msg_list
-
-
-    def _do_valid_station(self, stid):
-        """
-        測定局別処理 感度異常診断
-        """
-
-        msg_list = []
-
-        # 測定局設定読込
-        freqs, tolerance = self._load_station_settings(stid)
-
-        # バンドパスフィルタ
-        self.oct_freq_mask = {}
-        for freq in freqs:
-            self.oct_freq_mask[str(freq)] = self.sp.make_oct_mask(freq)
-
-        # 日別処理
-        for day in self.day_list:
-
-            st_time = datetime.combine(day, time(23,59,59))
-
-            # 周波数ごとの処理
-            anorm_freqs = []
-            for freq in freqs:
-                params = self._get_target_parms(stid, st_time, freq)
-                if params == False:
-                    #! ログ書く
-                    self.logger.app.info("{}-{}-感度異常診断を実行できませんでした".format(stid, day))
-                    break
-                elif params == -1:
-                    self.logger.app.info("{}-{}-{}-分散が正常値に収まらなかったため、感度異常診断ができませんでした".format(stid, day, freq))
-                    jadge = False
-                else:
-                    jadge = self._jadge_sensivity(stid, freq, params, tolerance)
-
-                if jadge != False:
-                    anorm_freqs.append(freq)
-
-            if anorm_freqs != []:
-                msg = "sensitivity-{}-[{}]-{}".format(stid, ",".join(map(str, anorm_freqs)), day)
-                msg_list.append(msg)
-                self.logger.result.info(msg)
-
-            self.logger.app.debug("sensitiviy-{}-complete".format(day))
-
-        return msg_list
-
-
-    def _load_station_settings(self, stid):
-
-        if "target_frequency" in self.station_settings["id"==stid]:
-            freqs  = self.station_settings["id" == stid]["target_frequency"]
         else:
-            freqs = self.co_target_frequency
-
-        if "sensitivity_tolerance" in self.station_settings["id"==stid]:
-            t = self.station_settings["id" == stid]["sensitivity_tolerance"]
-        else:
-            t = self.co_tolerance
-
-        return freqs, t
-
-
-    def _get_target_parms(self, stid, st_time, freq, params = None):
-
-        time = st_time
-
-        if params == None:
-            params = []
-
-        reload_count = 0
-        # パラメータが指定数になるまでループ処理
-        while len(params) < self.normaly_sample_size:
-            event_time, path = self.get_target_event_time(stid, time, direction = "backward")
-
-            if event_time == False:
-                self.logger.app.info("データを必要数集められませんでした[必要数:{},不足数{}]".format(self.normaly_sample_size,self.normaly_sample_size - len(params)))
-                return False
-
-            signal = self.sp.wav_load(path)
-            sub_data = signal[:,0]
-            slm_data = signal[:,1]
-
-            slm_lv = self.sp.cal_CPB_level2(slm_data, self.oct_freq_mask[str(freq)])
-            sub_lv = self.sp.cal_CPB_level2(sub_data, self.oct_freq_mask[str(freq)])
-            params.append(slm_lv - sub_lv)
-
-            time = event_time - timedelta(seconds = 1)
-
-        params, count = self._delete_outlier_value(stid, freq, params)
-        reload_count += count
-
-        if reload_count > self.sample_reload_limit_number:
-            return -1
-
-        if len(params) == self.normaly_sample_size:
-            return params
-
-        return self._get_target_parms(stid, time, freq, params)
-
-
-    def _delete_outlier_value(self, stid, freq, params):
-        count = 0
-        while count <= self.sample_reload_limit_number:
-            var = np.var(params, ddof=1)
-            if var > self.normal_parameters[stid]["norm_var"][str(freq)]:
-                dist = list(np.abs(params - np.mean(params)))
-                idx = dist.index(max(dist))
-                params.pop(idx)
-                count += 1
-            else:
-                break
-
-        return params, count
-
-
-    def _jadge_sensivity(self, stid, freq, params, tolerance):
-        """
-        感度異常診断実行
-        """
-
-        if self.normal_parameters[stid]["norm_interval_lower"][str(freq)] - tolerance > np.mean(params):
-            return 1
-        elif self.normal_parameters[stid]["norm_interval_upper"][str(freq)] + tolerance < np.mean(params):
-            return 2
-
-        return False
+            return True

@@ -35,6 +35,7 @@ class SignalProcesses(object):
         label = "np." + self.window + "(self.fft_n)"
         self.window_func = eval(label)
 
+        # バンドパスフィルタ作成
         freqs = settings.common["target_frequency"]
         self.oct_freq_mask={}
         for freq in freqs:
@@ -54,7 +55,7 @@ class SignalProcesses(object):
             numpy array: stereo signalのsample値
         """
 
-        if os.path.exists(wav_path) == False:
+        if not os.path.exists(wav_path):
             raise ValueError("WAVEファイルが見つかりません:{}".format(wav_path))
 
         with wave.open(wav_path, 'rb') as wv:
@@ -67,6 +68,8 @@ class SignalProcesses(object):
 
         # 対象ファイルの読み込み
         _, data = wavfile.read(wav_path)
+
+        self.logger.app.debug(f"wave_load:{wav_path}")
 
         return data
 

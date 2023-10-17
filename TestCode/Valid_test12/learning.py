@@ -83,7 +83,6 @@ class Learning(Detecter):
         # 成功
         return var, bottom, up
 
-
     def _cal_normal_params_function(self, stid, calibrated_time, freqs, propation) -> dict:
 
         # 初期化
