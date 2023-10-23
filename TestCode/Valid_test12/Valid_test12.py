@@ -41,6 +41,5 @@ def main():
     # 異常検知実行
     msg = sn.do_valid()
 
-
 if __name__ == "__main__":
     main()

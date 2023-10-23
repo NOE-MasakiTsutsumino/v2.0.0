@@ -19,6 +19,8 @@ class Detecter(object):
         self.wave_dir = settings.wave_dir
         self.logger.app.debug(f"wave_dir:{self.wave_dir}")
 
+        self.chart_save_dir = settings.chart_save_dir
+
         self.normaly_sample_size = settings.common["normaly_sample_size"]
         self.logger.app.debug(f"normaly_sample_size:{self.normaly_sample_size}")
 
@@ -133,7 +135,6 @@ class Detecter(object):
 
     def cal_mean_interval(self, data, proportion):
 
-
         """
         分布の母平均信頼区間を求める
         """
@@ -170,9 +171,9 @@ class Detecter(object):
                 self.logger.app.critical(error)
                 exit()
 
-    def _check_calculated_norm(self, stid, norma_param):
+    def _check_calculated_norm(self, stid, norm_param):
 
-        if stid not in norma_param:
+        if stid not in norm_param:
             return False
         else:
             return True

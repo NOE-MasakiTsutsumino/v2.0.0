@@ -172,7 +172,7 @@ class Learning(Detecter):
         filename = "NORMAL_PARAMETERS.json"
         if buckup and os.path.isfile(filename):
             today = datetime.today()
-            bk_fname = f"{datetime.strftime(today, '%Y%m%d')}_" + filename
+            bk_fname = f"backup_{datetime.strftime(today, '%Y%m%d')}_" + filename
             shutil.copyfile(filename, bk_fname)
             self.logger.app.debug(f"backup file {bk_fname}")
 

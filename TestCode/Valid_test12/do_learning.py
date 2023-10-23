@@ -34,9 +34,11 @@ def main():
 
     # 正常パラメータ算出
     ln.fit()
+    logger.app.info("正常パラメータ算出完了")
 
     # 正常パラメータ保存とバックアップ
     ln.save()
+    logger.app.info("正常パラメータ保存完了")
 
 if __name__ == "__main__":
     main()
