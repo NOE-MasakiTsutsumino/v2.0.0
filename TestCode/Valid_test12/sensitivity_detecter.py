@@ -33,7 +33,7 @@ class Sensitiviy_Detecter(Detecter):
             # 異常検知実行
             station_msg = self._do_valid_station(stid)
             if station_msg != []:
-                msg_list.append(station_msg)
+                msg_list += station_msg
             self.logger.app.info(f"sensitiviy - {stid} -complete")
 
         return msg_list
@@ -79,6 +79,8 @@ class Sensitiviy_Detecter(Detecter):
 
                 if not jadge:
                     anorm_freqs.append(freq)
+
+                self.logger.app.info(f"sensitiviy_detecter - {stid} - {day} - {freq} - complete")
 
             # 異常があった場合、メッセージをロギング
             if anorm_freqs != []:

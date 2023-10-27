@@ -102,6 +102,10 @@ class Anormaly_Detecter(Detecter):
             self.logger.app.error(msg)
             return False
 
+
+        # 出力初期化
+        msg_list = []
+
         # 測定局設定読込
         freqs, tolerance = self._load_station_settings(stid)
 
@@ -146,16 +150,15 @@ class Anormaly_Detecter(Detecter):
                         break
                 # 異常があった場合、メッセージをロギング
                 if anorm_freqs != []:
-                    # msg_list.append("anormly-{}-[{}]-{}"
-                    #                 .format(stid, ",".join(map(str, anorm_freqs)), os.path.basename(file)))
                     # メッセージの整理
                     msg = "anormly_detecter-{}-[{}]-{}".format(stid, ",".join(map(str, anorm_freqs)), os.path.basename(file))
+                    msg_list.append(msg)
                     # ログ出力
                     self.logger.result.warning(msg)
 
             self.logger.app.info(f"anormary_detecter - {stid} - {day} - complete")
 
-        return True
+        return msg_list
 
     def do_valid(self):
 
@@ -167,8 +170,8 @@ class Anormaly_Detecter(Detecter):
             # 異常検知実行
             station_msg = self._do_valid_station(stid)
             # 異常メッセージがあれば出力に追加
-            if (station_msg != []) and (not station_msg):
-                msg_list.append(station_msg)
+            if station_msg != []:
+                msg_list += station_msg
 
             self.logger.app.info(f"anormary - {stid} - complete")
 

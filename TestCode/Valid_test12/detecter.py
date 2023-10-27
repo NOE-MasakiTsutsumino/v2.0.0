@@ -1,10 +1,9 @@
-from datetime import datetime, timedelta, time, timedelta
+from datetime import datetime, timedelta ,timedelta
 import os
 import glob
 from signals import SignalProcesses
 import numpy as np
 from scipy import stats
-from math import floor
 import json
 
 class Detecter(object):

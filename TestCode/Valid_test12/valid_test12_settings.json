@@ -4,17 +4,17 @@
     "chart_save_dir":"D:\\Develop\\SoundValid\\v2.0.0\\TestCode\\Valid_test12\\FIG",
     "fft_parameters":{
         "fft_n":1024,
-        "overlap_percent":30,
+        "overlap_percent":50,
         "window":"hanning",
         "wave_samplelate":12000
     },
     "valid_common":{
-        "recurse_days":100,
+        "recurse_days":30,
         "normaly_sample_size":30,
         "sample_reload_limit_percent_of_day":50,
         "use_common_calibrated_time":true,
         "common_calibrated_time":"2022-12-01 00:00:00",
-        "target_frequency":[500,1000,2000],
+        "target_frequency":[250,500,1000,2000],
         "propotion":0.95,
         "anormaly_tolerance":1.0,
         "sensitivity_tolerance":0.5

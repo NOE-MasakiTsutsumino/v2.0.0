@@ -44,7 +44,7 @@ class Valid_logger():
         stream_handler.setFormatter(formatter)
 
         # コンソール出力するログレベルを設定
-        stream_handler.setLevel(logging.ERROR)
+        stream_handler.setLevel(logging.INFO)
 
         # コンソール出力ハンドラをロガーに追加
         logger.addHandler(stream_handler)
