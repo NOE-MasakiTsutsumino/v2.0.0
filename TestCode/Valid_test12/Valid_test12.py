@@ -49,9 +49,9 @@ def main():
 
     if msg != []:
     # 異常検知メッセージをwindowsアプリケーションログ出力
+        logger.app.info(f"{len(msg)}件の異常を検知")
         msg.insert(0, "マイク異常検知実験")
         winlogger.warning('\n'.join(msg))
-        logger.app.info(f"{len(msg)}件の異常を検知")
     else:
         logger.app.info("異常検知メッセージなし")
 

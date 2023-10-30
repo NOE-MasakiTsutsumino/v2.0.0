@@ -152,9 +152,12 @@ class Anormaly_Detecter(Detecter):
                 if anorm_freqs != []:
                     # メッセージの整理
                     msg = "anormly_detecter-{}-[{}]-{}".format(stid, ",".join(map(str, anorm_freqs)), os.path.basename(file))
+                    self.logger.result.warning(f"anormary,{stid},{day},{file},{anorm_freqs},異常あり")
                     msg_list.append(msg)
                     # ログ出力
-                    self.logger.result.warning(msg)
+                    # self.logger.result.warning(msg)
+                else:
+                    self.logger.result.info(f"anormary,{stid},{file},異常なし")
 
             self.logger.app.info(f"anormary_detecter - {stid} - {day} - complete")
 

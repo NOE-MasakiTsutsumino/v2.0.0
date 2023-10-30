@@ -77,7 +77,7 @@ class Valid_logger():
         logger = logging.getLogger("result")
 
         # ログレベルをWARNING以上に設定
-        logger.setLevel(logging.WARNING)
+        logger.setLevel(logging.INFO)
 
         # ログファイル名を作成
         filename = datetime.now().strftime('%Y%m%d') + "_result.log"
