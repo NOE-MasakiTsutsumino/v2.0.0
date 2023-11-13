@@ -72,6 +72,7 @@ class Sensitiviy_Detecter(Detecter):
                 params = self._get_target_parms(stid, st_time, freq ,reload_limit_num)
                 if not params:
                     self.logger.app.error(f"{stid} - {day} - {freq} - 感度異常検知を実行できませんでした")
+                    self.logger.result.error(f"sensitiviy,{stid},{day},{freq},異常検知不可")
                     continue
                 else:
                     # 異常判定
@@ -79,6 +80,9 @@ class Sensitiviy_Detecter(Detecter):
 
                 if not jadge:
                     anorm_freqs.append(freq)
+                    self.logger.result.warning(f"sensitiviy,{stid},{day},{freq},異常あり")
+                else:
+                    self.logger.result.info(f"sensitiviy,{stid},{day},{freq},異常なし")
 
                 self.logger.app.info(f"sensitiviy_detecter - {stid} - {day} - {freq} - complete")
 

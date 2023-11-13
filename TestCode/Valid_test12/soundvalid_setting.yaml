@@ -1,0 +1,34 @@
+wav_directory: "\\<system>\\<airport>\\WAVE"
+log_save_directory: "\\<system>\\Program1\\soundvalid\\log"
+chart_save_directory: "\\<system>\\<airport>\\DATA"
+signal_process_settings:
+    tap: 1024
+    overlap: 0.50
+    window: "hannig"
+    mean_time: 1.0
+detector_common_settings:
+    return_days: 1
+    valid_common_calibrated_time: false
+    common_calibrated_time: "2022-12-01 00:00:00"
+    confidence_level: 0.95
+    sample_size: 30
+    reload_limit_of_data: 0.50
+station_settings:
+    - stationid: "CH53"
+      name: "富岡"
+      execution: true
+      calibrated_time: "2023-8-28 00:00:00"
+      anormaly_target_freqency: [250,500,1000,2000,4000]
+      anormaly_tolerance: 1.0
+      sensitivity_target_freqency: [250,500,1000,2000,4000]
+      sensitivity_tolerance: 0.5
+      sensitivity__peak_percentile: 0.1
+    - stationid: "XX01"
+      name: "試験"
+      execution: false
+      calibrated_time: "2023-8-28 00:00:00"
+      anormaly_target_freqency: [250,500,1000,2000,4000]
+      anormaly_tolerance: 1.0
+      sensitivity_target_freqency: [250,500,1000,2000,4000]
+      sensitivity_tolerance: 0.5
+      sensitivity__peak_percentile: 0.1
