@@ -9,7 +9,6 @@
         "wave_samplelate":12000
     },
     "valid_common":{
-        "recurse_days":1,
         "recurse_days":10,
         "normaly_sample_size":30,
         "sample_reload_limit_percent_of_day":50,
