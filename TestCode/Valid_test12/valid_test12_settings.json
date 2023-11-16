@@ -18,8 +18,8 @@
         "propotion":0.95,
         "anormaly_tolerance":1.0,
         "sensitivity_tolerance":0.5
-    },b
-    "station":b[
+    },
+    "station":[
         {
             "id":"CH53",
             "name":"富丘",
