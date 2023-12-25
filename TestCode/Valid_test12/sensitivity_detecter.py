@@ -14,10 +14,10 @@ class Sensitiviy_Detecter(Detecter):
 
     def __init__(self, settings, logger):
 
-        #　親クラス継承
+        # 親クラス継承
         super().__init__(settings, logger)
 
-        #　閾値取得
+        # 閾値取得
         self.co_tolerance  = float(settings.common["sensitivity_tolerance"])
         self.logger.app.debug(f"sensitivity_tolerance:{self.co_tolerance}")
 

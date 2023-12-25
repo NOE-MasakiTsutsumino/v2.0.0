@@ -1,0 +1,1440 @@
+2023-12-25 09:53:26,045 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 09:53:26,045 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 09:53:26,049 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 09:53:26,049 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 09:53:26,065 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 09:53:26,126 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 09:53:26,191 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 09:53:26,253 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 09:53:26,300 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 09:53:26,345 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 09:53:26,380 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 09:53:26,520 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 09:53:26,566 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 09:53:26,656 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 09:53:26,699 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 09:53:26,764 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 09:53:26,810 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 09:53:26,848 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 09:53:26,895 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 09:53:26,956 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 09:53:26,988 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 09:53:27,045 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 09:53:27,100 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 09:53:27,144 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 09:53:27,235 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 09:53:27,314 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 09:53:27,350 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 09:53:27,414 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 09:53:27,454 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 09:53:27,623 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 09:53:27,685 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 09:53:27,740 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 09:53:27,818 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 09:53:27,913 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 09:55:42,718 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 09:55:42,720 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 09:55:42,721 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 09:55:42,722 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 09:55:42,738 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 09:55:42,800 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 09:55:42,862 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 09:55:42,924 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 09:55:42,969 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 09:55:43,011 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 09:55:43,052 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 09:55:43,185 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 09:55:43,222 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 09:55:43,315 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 09:55:43,348 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 09:55:43,410 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 09:55:43,455 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 09:55:43,500 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 09:55:43,552 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 09:55:43,597 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 09:55:43,645 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 09:55:43,692 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 09:55:43,736 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 09:55:43,784 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 09:55:43,876 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 09:55:43,942 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 09:55:43,985 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 09:55:44,034 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 09:55:44,080 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 09:55:44,235 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 09:55:44,286 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 09:55:44,348 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 09:55:44,411 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 09:55:44,516 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 09:57:08,312 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 09:57:08,312 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 09:57:08,326 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 09:57:08,326 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 09:57:08,344 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 09:57:08,410 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 09:57:08,476 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 09:57:08,535 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 09:57:08,582 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 09:57:08,628 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 09:57:08,675 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 09:57:08,788 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 09:57:08,834 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 09:57:08,924 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 09:57:08,967 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 09:57:09,023 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 09:57:09,070 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 09:57:09,099 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 09:57:09,160 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 09:57:09,224 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 09:57:09,254 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 09:57:09,311 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 09:57:09,348 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 09:57:09,396 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 09:57:09,471 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 09:57:09,551 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 09:57:09,587 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 09:57:09,647 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 09:57:09,690 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 09:57:09,828 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 09:57:09,888 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 09:57:09,945 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 09:57:10,011 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 09:57:10,095 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 09:57:10,393 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 09:57:10,393 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 09:57:10,393 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 09:57:10,393 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 09:57:51,169 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 09:57:51,169 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 09:57:51,169 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 09:57:51,169 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 09:57:51,196 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 09:57:51,257 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 09:57:51,319 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 09:57:51,379 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 09:57:51,423 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 09:57:51,470 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 09:57:51,512 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 09:57:51,635 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 09:57:51,675 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 09:57:51,756 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 09:57:51,813 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 09:57:51,877 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 09:57:51,919 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 09:57:51,957 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 09:57:52,019 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 09:57:52,066 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 09:57:52,109 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 09:57:52,161 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 09:57:52,206 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 09:57:52,253 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 09:57:52,331 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 09:57:52,407 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 09:57:52,442 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 09:57:52,501 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 09:57:52,534 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 09:57:52,698 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 09:57:52,751 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 09:57:52,799 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 09:57:52,878 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 09:57:52,971 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 09:57:53,170 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常 - 1000 - 高い
+2023-12-25 09:57:53,170 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 09:57:53,170 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 09:57:53,170 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 09:58:49,812 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 09:58:49,812 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 09:58:49,812 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 09:58:49,812 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 09:58:49,844 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 09:58:49,891 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 09:58:49,954 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 09:58:50,029 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 09:58:50,066 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 09:58:50,108 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 09:58:50,164 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 09:58:50,283 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 09:58:50,318 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 09:58:50,412 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 09:58:50,445 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 09:58:50,519 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 09:58:50,560 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 09:58:50,597 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 09:58:50,644 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 09:58:50,707 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 09:58:50,735 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 09:58:50,792 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 09:58:50,832 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 09:58:50,877 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 09:58:50,970 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 09:58:51,038 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 09:58:51,068 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 09:58:51,129 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 09:58:51,180 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 09:58:51,324 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 09:58:51,378 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 09:58:51,426 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 09:58:51,500 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 09:58:51,593 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 09:58:51,802 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 09:58:51,803 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 09:58:51,804 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 09:58:51,805 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:05:50,236 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:05:50,236 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:05:50,238 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:05:50,238 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:05:50,259 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:05:50,315 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:05:50,378 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:05:50,442 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:05:50,486 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:05:50,530 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:05:50,565 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:05:50,696 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:05:50,740 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:05:50,817 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:05:50,861 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:05:50,925 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:05:50,974 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:05:51,010 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:05:51,063 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:05:51,113 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:05:51,163 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:05:51,206 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:05:51,256 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:05:51,285 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:05:51,376 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:05:51,440 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:05:51,482 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:05:51,537 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:05:51,564 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:05:51,730 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:05:51,781 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:05:51,829 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:05:51,907 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:05:51,998 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:05:52,202 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:05:52,202 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:05:52,202 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:05:52,202 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:09:15,797 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:09:15,800 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:09:15,801 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:09:15,801 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:09:15,821 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:09:15,877 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:09:15,938 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:09:16,001 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:09:16,047 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:09:16,080 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:09:16,127 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:09:16,252 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:09:16,297 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:09:16,376 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:09:16,408 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:09:16,471 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:09:16,522 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:09:16,564 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:09:16,610 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:09:16,672 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:09:16,711 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:09:16,756 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:09:16,800 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:09:16,847 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:09:16,923 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:09:17,001 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:09:17,036 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:09:17,097 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:09:17,140 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:09:17,293 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:09:17,356 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:09:17,418 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:09:17,477 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:09:17,576 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:09:17,830 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:09:17,830 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:09:17,830 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:09:17,830 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:10:41,998 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:10:41,998 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:10:42,014 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:10:42,015 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:10:42,032 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:10:42,098 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:10:42,161 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:10:42,222 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:10:42,256 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:10:42,299 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:10:42,350 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:10:42,474 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:10:42,517 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:10:42,596 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:10:42,640 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:10:42,699 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:10:42,745 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:10:42,786 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:10:42,828 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:10:42,884 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:10:42,924 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:10:42,970 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:10:43,015 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:10:43,049 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:10:43,141 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:10:43,203 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:10:43,247 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:10:43,297 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:10:43,345 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:10:43,488 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:10:43,546 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:10:43,593 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:10:43,657 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:10:43,774 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:10:43,985 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:10:43,986 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:10:43,988 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:10:43,988 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:11:16,060 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:11:16,076 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:11:16,077 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:11:16,077 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:11:16,095 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:11:16,157 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:11:16,203 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:11:16,272 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:11:16,314 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:11:16,345 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:11:16,393 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:11:16,515 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:11:16,564 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:11:16,642 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:11:16,691 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:11:16,751 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:11:16,796 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:11:16,831 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:11:16,878 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:11:16,947 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:11:16,985 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:11:17,026 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:11:17,067 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:11:17,110 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:11:17,195 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:11:17,269 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:11:17,306 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:11:17,360 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:11:17,404 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:11:17,548 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:11:17,601 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:11:17,648 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:11:17,722 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:11:17,816 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:11:18,044 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:11:18,044 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:11:18,044 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:11:18,044 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:12:29,552 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:12:29,552 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:12:29,560 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:12:29,561 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:12:29,572 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:12:29,627 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:12:29,703 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:12:29,765 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:12:29,799 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:12:29,846 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:12:29,896 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:12:30,017 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:12:30,058 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:12:30,140 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:12:30,171 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:12:30,235 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:12:30,285 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:12:30,314 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:12:30,373 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:12:30,422 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:12:30,466 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:12:30,500 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:12:30,546 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:12:30,594 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:12:30,672 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:12:30,735 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:12:30,766 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:12:30,827 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:12:30,874 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:12:31,016 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:12:31,063 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:12:31,109 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:12:31,188 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:12:31,282 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:12:31,499 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:12:31,499 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:12:31,499 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:12:31,499 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:14:26,267 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:14:26,267 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:14:26,267 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:14:26,267 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:14:26,287 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:14:26,346 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:14:26,409 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:14:26,470 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:14:26,515 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:14:26,563 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:14:26,610 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:14:26,730 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:14:26,773 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:14:26,844 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:14:26,891 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:14:26,953 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:14:27,002 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:14:27,036 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:14:27,079 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:14:27,140 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:14:27,188 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:14:27,229 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:14:27,283 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:14:27,323 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:14:27,408 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:14:27,471 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:14:27,516 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:14:27,564 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:14:27,609 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:14:27,748 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:14:27,814 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:14:27,860 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:14:27,939 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:14:28,031 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:14:28,249 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:14:28,249 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:14:28,249 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:14:28,249 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:14:54,638 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:14:54,638 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:14:54,641 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:14:54,641 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:14:54,657 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:14:54,720 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:14:54,782 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:14:54,845 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:14:54,876 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:14:54,921 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:14:54,970 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:14:55,092 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:14:55,126 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:14:55,203 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:14:55,251 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:14:55,315 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:14:55,345 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:14:55,391 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:14:55,438 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:14:55,499 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:14:55,533 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:14:55,579 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:14:55,639 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:14:55,677 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:14:55,762 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:14:55,831 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:14:55,861 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:14:55,921 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:14:55,953 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:14:56,106 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:14:56,156 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:14:56,212 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:14:56,282 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:14:56,376 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:14:56,591 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:14:56,592 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:14:56,592 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:14:56,592 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:15:28,753 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:15:28,755 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:15:28,756 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:15:28,756 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:15:28,779 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:15:28,834 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:15:28,893 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:15:28,969 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:15:29,001 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:15:29,048 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:15:29,095 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:15:29,203 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:15:29,252 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:15:29,328 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:15:29,383 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:15:29,443 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:15:29,492 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:15:29,533 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:15:29,574 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:15:29,641 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:15:29,668 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:15:29,727 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:15:29,762 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:15:29,813 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:15:29,897 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:15:29,962 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:15:30,003 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:15:30,056 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:15:30,098 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:15:30,249 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:15:30,297 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:15:30,343 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:15:30,422 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:15:30,516 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:15:30,751 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:15:30,765 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:15:30,765 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:15:30,765 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:16:47,497 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:16:47,497 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:16:47,509 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:16:47,510 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:16:47,517 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:16:47,596 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:16:47,657 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:16:47,719 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:16:47,765 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:16:47,801 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:16:47,847 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:16:47,981 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:16:48,030 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:16:48,115 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:16:48,154 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:16:48,202 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:16:48,259 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:16:48,297 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:16:48,350 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:16:48,408 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:16:48,445 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:16:48,485 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:16:48,542 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:16:48,579 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:16:48,658 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:16:48,735 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:16:48,778 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:16:48,832 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:16:48,876 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:16:49,025 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:16:49,078 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:16:49,129 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:16:49,189 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:16:49,283 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:16:49,501 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:16:49,501 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:16:49,501 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:16:49,501 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:17:10,863 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:17:10,864 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:17:10,865 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:17:10,866 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:17:10,874 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:17:10,940 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:17:11,005 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:17:11,075 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:17:11,115 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:17:11,155 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:17:11,205 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:17:11,323 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:17:11,361 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:17:11,438 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:17:11,486 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:17:11,547 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:17:11,594 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:17:11,634 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:17:11,688 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:17:11,734 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:17:11,782 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:17:11,830 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:17:11,876 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:17:11,908 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:17:12,000 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:17:12,063 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:17:12,096 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:17:12,158 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:17:12,205 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:17:12,343 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:17:12,408 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:17:12,455 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:17:12,532 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:17:12,629 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:17:12,827 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:17:12,827 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:17:12,841 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:17:12,841 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:23:33,906 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:23:33,906 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:23:33,906 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:23:33,906 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:23:33,926 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:23:33,984 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:23:34,048 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:23:34,111 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:23:34,142 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:23:34,192 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:23:34,239 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:23:34,363 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:23:34,405 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:23:34,485 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:23:34,531 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:23:34,596 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:23:34,641 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:23:34,672 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:23:34,721 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:23:34,782 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:23:34,820 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:23:34,859 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:23:34,915 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:23:34,953 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:23:35,033 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:23:35,099 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:23:35,140 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:23:35,203 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:23:35,234 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:23:35,387 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:23:35,438 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:23:35,497 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:23:35,563 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:23:35,656 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:23:35,873 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:23:35,873 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:23:35,873 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:23:35,873 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:23:58,846 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:23:58,846 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:23:58,846 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:23:58,846 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:23:58,876 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:23:58,938 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:23:58,998 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:23:59,066 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:23:59,097 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:23:59,143 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:23:59,189 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:23:59,298 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:23:59,350 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:23:59,431 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:23:59,470 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:23:59,532 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:23:59,578 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:23:59,611 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:23:59,657 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:23:59,719 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:23:59,751 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:23:59,800 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:23:59,845 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:23:59,893 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:23:59,970 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:24:00,047 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:24:00,079 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:24:00,126 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:24:00,172 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:24:00,323 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:24:00,382 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:24:00,422 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:24:00,501 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:24:00,595 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:24:00,810 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:24:00,810 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:24:00,810 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:24:00,810 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:24:57,950 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:24:57,952 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:24:57,953 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:24:57,953 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:24:57,970 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:24:58,030 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:24:58,096 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:24:58,155 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:24:58,187 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:24:58,238 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:24:58,284 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:24:58,406 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:24:58,439 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:24:58,533 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:24:58,577 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:24:58,627 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:24:58,672 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:24:58,713 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:24:58,768 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:24:58,814 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:24:58,859 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:24:58,908 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:24:58,939 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:24:58,984 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:24:59,077 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:24:59,140 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:24:59,174 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:24:59,234 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:24:59,268 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:24:59,429 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:24:59,477 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:24:59,533 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:24:59,596 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:24:59,690 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:24:59,906 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:24:59,906 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:24:59,906 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:24:59,906 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:25:17,249 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:25:17,249 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:25:17,249 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:25:17,249 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:25:17,275 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:25:17,330 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:25:17,390 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:25:17,457 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:25:17,483 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:25:17,531 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:25:17,578 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:25:17,695 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:25:17,739 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:25:17,814 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:25:17,858 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:25:17,923 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:25:17,955 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:25:18,000 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:25:18,050 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:25:18,095 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:25:18,130 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:25:18,172 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:25:18,219 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:25:18,252 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:25:18,346 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:25:18,408 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:25:18,452 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:25:18,513 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:25:18,555 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:25:18,695 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:25:18,751 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:25:18,797 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:25:18,876 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:25:18,970 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:25:19,186 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:25:19,186 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:25:19,186 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:25:19,186 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:26:14,657 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:26:14,670 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:26:14,670 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:26:14,670 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:26:14,688 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:26:14,755 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:26:14,814 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:26:14,873 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:26:14,907 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:26:14,955 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:26:15,004 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:26:15,110 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:26:15,158 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:26:15,235 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:26:15,283 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:26:15,344 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:26:15,381 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:26:15,423 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:26:15,474 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:26:15,533 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:26:15,568 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:26:15,612 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:26:15,657 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:26:15,697 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:26:15,779 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:26:15,846 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:26:15,880 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:26:15,938 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:26:15,974 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:26:16,128 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:26:16,171 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:26:16,220 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:26:16,299 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:26:16,391 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:26:16,607 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:26:16,607 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:26:16,607 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:26:16,607 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:26:57,407 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:26:57,409 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:26:57,411 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:26:57,411 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:26:57,423 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:26:57,485 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:26:57,547 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:26:57,610 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:26:57,660 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:26:57,696 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:26:57,738 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:26:57,859 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:26:57,914 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:26:58,007 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:26:58,056 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:26:58,134 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:26:58,181 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:26:58,223 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:26:58,297 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:26:58,376 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:26:58,408 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:26:58,460 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:26:58,509 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:26:58,561 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:26:58,663 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:26:58,727 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:26:58,783 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:26:58,853 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:26:58,882 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:26:59,066 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:26:59,132 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:26:59,195 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:26:59,260 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:26:59,370 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:26:59,624 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:26:59,624 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:26:59,626 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:26:59,626 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:27:30,491 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:27:30,493 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:27:30,494 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:27:30,495 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:27:30,511 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:27:30,570 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:27:30,629 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:27:30,701 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:27:30,733 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:27:30,784 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:27:30,846 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:27:30,970 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:27:31,031 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:27:31,115 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:27:31,167 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:27:31,220 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:27:31,266 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:27:31,317 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:27:31,367 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:27:31,415 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:27:31,467 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:27:31,510 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:27:31,556 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:27:31,598 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:27:31,683 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:27:31,758 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:27:31,791 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:27:31,847 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:27:31,882 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:27:32,034 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:27:32,096 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:27:32,141 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:27:32,203 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:27:32,299 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:27:32,529 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:27:32,529 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:27:32,529 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:27:32,542 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:29:01,390 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:29:01,390 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:29:01,400 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:29:01,400 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:29:01,420 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:29:01,470 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:29:01,531 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:29:01,594 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:29:01,639 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:29:01,675 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:29:01,719 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:29:01,845 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:29:01,891 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:29:01,969 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:29:02,019 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:29:02,082 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:29:02,126 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:29:02,159 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:29:02,218 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:29:02,268 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:29:02,300 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:29:02,347 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:29:02,393 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:29:02,439 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:29:02,516 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:29:02,595 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:29:02,631 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:29:02,688 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:29:02,733 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:29:02,878 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:29:02,935 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:29:02,985 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:29:03,047 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:29:03,141 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:29:03,380 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 500
+2023-12-25 10:29:03,381 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 500 - complete
+2023-12-25 10:29:03,394 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:29:03,455 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:29:03,514 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:29:03,563 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:29:03,611 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:29:03,655 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:29:03,703 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:29:03,822 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:29:03,864 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:29:03,950 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:29:03,992 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:29:04,059 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:29:04,102 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:29:04,140 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:29:04,188 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:29:04,250 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:29:04,282 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:29:04,328 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:29:04,378 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:29:04,415 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:29:04,503 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:29:04,565 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:29:04,611 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:29:04,672 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:29:04,703 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:29:04,860 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:29:04,929 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:29:04,973 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:29:05,042 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:29:05,142 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:29:05,290 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:29:05,290 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:29:05,320 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:29:05,381 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:29:05,445 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:29:05,521 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:29:05,570 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:29:05,600 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:29:05,663 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:29:05,793 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:29:05,857 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:29:05,947 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:29:05,999 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:29:06,067 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:29:06,102 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:29:06,151 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:29:06,220 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:29:06,279 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:29:06,323 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:29:06,352 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:29:06,416 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:29:06,450 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:29:06,538 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:29:06,610 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:29:06,657 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:29:06,718 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:29:06,751 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:29:06,911 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:29:06,976 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:29:07,034 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:29:07,113 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:29:07,220 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:29:07,254 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230916.WAV
+2023-12-25 10:29:07,300 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230524.WAV
+2023-12-25 10:29:07,348 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230459.WAV
+2023-12-25 10:29:07,385 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230422.WAV
+2023-12-25 10:29:07,461 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230347.WAV
+2023-12-25 10:29:07,684 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 2000
+2023-12-25 10:29:07,684 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 2000 - complete
+2023-12-25 10:29:07,687 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:29:07,753 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:29:07,821 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:29:07,891 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:29:07,940 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:29:07,974 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:29:08,029 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:29:08,147 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:29:08,199 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:29:08,290 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:29:08,322 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:29:08,387 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:29:08,449 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:29:08,478 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:29:08,543 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:29:08,605 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:29:08,648 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:29:08,695 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:29:08,743 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:29:08,787 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:29:08,874 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:29:08,950 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:29:08,987 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:29:09,041 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:29:09,101 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:29:09,259 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:29:09,328 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:29:09,384 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:29:09,458 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:29:09,566 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:39:45,347 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:39:45,347 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:39:45,353 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:39:45,353 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:39:45,368 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:39:45,427 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:39:45,489 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:39:45,551 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:39:45,600 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:39:45,631 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:39:45,690 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:39:45,801 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:39:45,848 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:39:45,929 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:39:45,974 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:39:46,038 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:39:46,068 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:39:46,114 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:39:46,162 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:39:46,225 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:39:46,258 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:39:46,304 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:39:46,352 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:39:46,380 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:39:46,474 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:39:46,538 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:39:46,584 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:39:46,631 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:39:46,678 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:39:46,817 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:39:46,880 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:39:46,928 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:39:46,990 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:39:47,084 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:39:47,115 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 500
+2023-12-25 10:39:47,115 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 500 - complete
+2023-12-25 10:39:47,131 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:39:47,195 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:39:47,257 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:39:47,319 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:39:47,351 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:39:47,397 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:39:47,445 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:39:47,571 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:39:47,615 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:39:47,708 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:39:47,754 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:39:47,817 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:39:47,849 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:39:47,883 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:39:47,943 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:39:47,990 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:39:48,038 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:39:48,083 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:39:48,130 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:39:48,162 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:39:48,259 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:39:48,321 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:39:48,350 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:39:48,421 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:39:48,455 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:39:48,612 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:39:48,664 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:39:48,722 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:39:48,786 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:39:48,880 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:39:48,895 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:39:48,895 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:39:48,927 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:39:48,976 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:39:49,037 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:39:49,099 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:39:49,146 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:39:49,182 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:39:49,225 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:39:49,360 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:39:49,405 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:39:49,474 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:39:49,521 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:39:49,583 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:39:49,631 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:39:49,663 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:39:49,725 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:39:49,771 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:39:49,818 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:39:49,865 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:39:49,911 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:39:49,943 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:39:50,038 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:39:50,101 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:39:50,146 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:39:50,193 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:39:50,241 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:39:50,388 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:39:50,444 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:39:50,489 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:39:50,570 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:39:50,663 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:39:50,695 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230916.WAV
+2023-12-25 10:39:50,724 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230524.WAV
+2023-12-25 10:39:50,771 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230459.WAV
+2023-12-25 10:39:50,819 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230422.WAV
+2023-12-25 10:39:50,881 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224230347.WAV
+2023-12-25 10:39:50,959 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 2000
+2023-12-25 10:39:50,959 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 2000 - complete
+2023-12-25 10:39:50,974 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:39:51,036 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:39:51,101 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:39:51,162 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:39:51,194 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:39:51,240 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:39:51,287 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:39:51,410 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:39:51,453 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:39:51,534 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:39:51,569 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:39:51,630 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:39:51,677 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:39:51,709 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:39:51,771 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:39:51,820 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:39:51,872 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:39:51,913 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:39:51,961 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:39:52,006 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:39:52,083 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:39:52,160 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:39:52,193 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:39:52,255 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:39:52,288 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:39:52,451 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:39:52,505 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:39:52,551 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:39:52,617 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:39:52,709 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:40:38,864 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:40:38,871 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:40:38,872 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:40:38,872 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:40:38,881 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:40:38,951 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:40:39,009 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:40:39,071 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:40:39,115 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:40:39,150 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:40:39,194 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:40:39,320 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:40:39,350 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:40:39,442 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:40:39,473 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:40:39,538 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:40:39,582 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:40:39,614 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:40:39,677 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:40:39,725 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:40:39,769 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:40:39,801 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:40:39,850 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:40:39,897 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:40:39,989 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:40:40,051 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:40:40,100 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:40:40,145 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:40:40,193 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:40:40,335 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:40:40,381 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:40:40,444 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:40:40,505 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:40:40,599 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:40:40,630 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:40:40,631 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:40:40,631 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:40:40,631 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:41:21,940 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:41:21,940 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:41:21,942 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:41:21,942 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:41:21,961 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:41:22,008 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:41:22,069 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:41:22,131 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:41:22,179 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:41:22,208 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:41:22,256 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:41:22,389 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:41:22,427 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:41:22,515 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:41:22,556 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:41:22,614 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:41:22,659 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:41:22,695 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:41:22,741 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:41:22,802 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:41:22,833 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:41:22,881 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:41:22,926 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:41:22,973 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:41:23,055 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:41:23,115 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:41:23,148 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:41:23,208 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:41:23,256 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:41:23,401 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:41:23,443 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:41:23,503 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:41:23,569 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:41:23,661 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:41:23,691 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:41:23,691 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:41:23,692 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:41:23,692 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:44:14,804 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:44:14,806 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:44:14,808 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:44:14,808 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:44:14,828 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:44:14,883 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:44:14,951 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:44:15,008 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:44:15,053 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:44:15,099 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:44:15,145 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:44:15,259 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:44:15,303 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:44:15,382 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:44:15,427 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:44:15,488 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:44:15,536 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:44:15,570 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:44:15,625 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:44:15,677 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:44:15,711 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:44:15,760 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:44:15,794 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:44:15,841 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:44:15,928 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:44:16,003 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:44:16,039 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:44:16,090 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:44:16,137 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:44:16,282 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:44:16,332 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:44:16,383 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:44:16,459 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:44:16,544 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:44:16,784 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:44:16,784 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:44:16,784 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:44:16,800 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:46:17,959 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:46:17,962 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:46:17,964 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:46:17,965 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:46:17,976 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:46:18,038 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:46:18,103 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:46:18,165 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:46:18,207 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:46:18,241 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:46:18,288 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:46:18,413 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:46:18,459 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:46:18,538 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:46:18,583 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:46:18,651 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:46:18,692 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:46:18,727 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:46:18,772 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:46:18,837 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:46:18,868 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:46:18,911 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:46:18,957 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:46:18,990 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:46:19,084 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:46:19,146 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:46:19,178 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:46:19,247 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:46:19,288 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:46:19,430 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:46:19,475 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:46:19,536 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:46:19,601 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:46:19,693 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:46:19,925 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:46:19,927 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:46:19,927 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:46:19,927 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:47:05,349 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:47:05,349 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:47:05,349 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:47:05,349 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:47:05,378 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:47:05,434 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:47:05,490 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:47:05,552 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:47:05,604 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:47:05,639 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:47:05,692 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:47:05,804 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:47:05,850 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:47:05,927 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:47:05,978 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:47:06,034 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:47:06,070 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:47:06,112 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:47:06,164 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:47:06,208 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:47:06,257 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:47:06,295 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:47:06,347 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:47:06,381 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:47:06,461 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:47:06,537 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:47:06,569 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:47:06,621 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:47:06,668 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:47:06,815 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:47:06,872 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:47:06,927 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:47:06,993 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:47:07,085 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:47:07,315 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:47:07,331 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:47:07,331 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:47:07,331 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:48:07,596 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:48:07,598 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:48:07,599 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:48:07,599 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:48:07,616 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:48:07,678 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:48:07,735 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:48:07,789 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:48:07,835 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:48:07,881 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:48:07,926 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:48:08,041 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:48:08,083 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:48:08,173 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:48:08,216 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:48:08,276 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:48:08,324 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:48:08,370 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:48:08,428 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:48:08,489 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:48:08,534 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:48:08,571 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:48:08,630 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:48:08,663 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:48:08,752 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:48:08,828 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:48:08,857 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:48:08,920 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:48:08,952 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:48:09,111 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:48:09,170 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:48:09,227 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:48:09,294 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:48:09,387 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:48:09,630 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:48:09,631 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:48:09,631 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:48:09,631 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:48:40,737 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:48:40,750 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:48:40,753 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:48:40,753 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:48:40,776 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:48:40,834 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:48:40,895 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:48:40,958 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:48:40,994 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:48:41,040 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:48:41,085 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:48:41,206 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:48:41,237 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:48:41,332 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:48:41,378 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:48:41,427 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:48:41,490 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:48:41,521 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:48:41,583 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:48:41,630 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:48:41,676 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:48:41,721 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:48:41,756 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:48:41,804 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:48:41,883 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:48:41,958 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:48:41,988 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:48:42,053 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:48:42,099 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:48:42,260 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:48:42,316 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:48:42,370 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:48:42,437 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:48:42,522 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:48:42,777 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:48:42,778 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:48:42,780 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:48:42,780 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:48:49,628 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:48:49,631 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:48:49,633 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:48:49,633 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:48:49,639 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:48:49,711 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:48:49,771 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:48:49,838 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:48:49,882 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:48:49,916 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:48:49,959 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:48:50,117 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:48:50,175 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:48:50,262 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:48:50,304 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:48:50,370 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:48:50,417 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:48:50,461 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:48:50,515 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:48:50,569 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:48:50,608 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:48:50,642 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:48:50,701 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:48:50,741 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:48:50,833 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:48:50,904 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:48:50,946 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:48:50,999 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:48:51,044 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:48:51,190 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:48:51,251 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:48:51,295 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:48:51,371 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:48:51,449 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:48:51,691 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常なし - 1000
+2023-12-25 10:48:51,691 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:48:51,691 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:48:51,691 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete
+2023-12-25 10:50:14,093 - logger - __init__ - DEBUG: logger instantized
+2023-12-25 10:50:14,094 - Valid_test13 - main - INFO: 異常検知モードで実行
+2023-12-25 10:50:14,096 - sensitivity_detecter - __init__ - INFO: Sensitiviy_Detecter class instantized
+2023-12-25 10:50:14,096 - detecter - load_normal_parameters - INFO: 正常パラメータ読み込み完了
+2023-12-25 10:50:14,117 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235925.WAV
+2023-12-25 10:50:14,179 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235754.WAV
+2023-12-25 10:50:14,240 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235359.WAV
+2023-12-25 10:50:14,302 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235239.WAV
+2023-12-25 10:50:14,334 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235116.WAV
+2023-12-25 10:50:14,382 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224235014.WAV
+2023-12-25 10:50:14,427 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234814.WAV
+2023-12-25 10:50:14,544 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234634.WAV
+2023-12-25 10:50:14,582 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234256.WAV
+2023-12-25 10:50:14,663 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224234159.WAV
+2023-12-25 10:50:14,710 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233920.WAV
+2023-12-25 10:50:14,775 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233838.WAV
+2023-12-25 10:50:14,819 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233805.WAV
+2023-12-25 10:50:14,851 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233646.WAV
+2023-12-25 10:50:14,911 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233537.WAV
+2023-12-25 10:50:14,958 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233454.WAV
+2023-12-25 10:50:15,005 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233308.WAV
+2023-12-25 10:50:15,052 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224233149.WAV
+2023-12-25 10:50:15,100 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232907.WAV
+2023-12-25 10:50:15,132 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232834.WAV
+2023-12-25 10:50:15,223 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232749.WAV
+2023-12-25 10:50:15,287 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232523.WAV
+2023-12-25 10:50:15,319 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232354.WAV
+2023-12-25 10:50:15,381 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224232252.WAV
+2023-12-25 10:50:15,428 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231938.WAV
+2023-12-25 10:50:15,571 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231704.WAV
+2023-12-25 10:50:15,632 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231451.WAV
+2023-12-25 10:50:15,682 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231422.WAV
+2023-12-25 10:50:15,755 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231335.WAV
+2023-12-25 10:50:15,835 - signals - wav_load - DEBUG: wave_load:D:\Diana\新千歳空港\WAVE\202312\CH53\20231224\231224231146.WAV
+2023-12-25 10:50:16,081 - sensitivity_detecter - _jadge_sensivity - DEBUG: 異常 - 1000 - マイク感度高い
+2023-12-25 10:50:16,081 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - 1000 - complete
+2023-12-25 10:50:16,081 - sensitivity_detecter - _do_valid_station - INFO: sensitiviy_detecter - CH53 - 2023-12-24 - complete
+2023-12-25 10:50:16,081 - sensitivity_detecter - do_valid - INFO: sensitiviy - CH53 - complete

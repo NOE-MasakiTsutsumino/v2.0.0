@@ -3,7 +3,7 @@ log_save_directory: "\\<system>\\Program1\\soundvalid\\log"
 chart_save_directory: "\\<system>\\<airport>\\DATA"
 signal_process_settings:
     tap: 1024
-    overlap: 0.50
+    overlap_rate: 0.50
     window: "hannig"
     mean_time: 1.0
 detector_common_settings:
