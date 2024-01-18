@@ -1,4 +1,4 @@
-wav_directory: "D:\\Diana\\新千歳空港\\WAVE"
+wav_directory: "D:\\Develop\\SoundValid\\v2.0.0\\TestCode\\audio"
 log_save_directory: "D:\\Develop\\SoundValid\\v2.0.0\\TestCode\\Valid_test13"
 chart_save_directory: "D:\\Develop\\SoundValid\\v2.0.0\\TestCode\\Valid_test13"
 
@@ -6,13 +6,14 @@ signal_process_settings:
     tap: 1024
     overlap_rate: 0.50
     window: "hanning"
-    mean_time: 1.0
+    mean_time: 0.5
 detector_common_settings:
     system_start_date: "2022-12-01"
     return_days: 1
     valid_common_calibrated_time: false
     common_calibrated_time: "2022-12-01 00:00:00"
-    confidence_level: 0.95
+    lows_confidence_level: 0.99
+    sensitivity_confidence_level: 0.95
     sample_size: 30
     reload_limit_of_data: 0.50
     learning_target_freqs: [250,500,1000,2000]
@@ -23,8 +24,10 @@ station_settings:
       name: "富岡"
       execution: true
       calibrated_time: "2022-12-01 00:00:00"
-      internal_cal_level: 114.00
-      anormaly_target_freqency: [250,500,1000,2000]
-      anormaly_tolerance: 1.0
-      sensitivity_target_freqency: [1000]
-      sensitivity_tolerance: 0
+      internal_cal_level: 114.19
+      sensitivity_enable_alerts: true
+      sensitivity_target_freqency: [250,500,1000,2000]
+      sensitivity_tolerance: 0.5
+      lows_enable_alerts: true
+      lows_target_freqency: [250,500]
+      lows_tolerance: 1.0

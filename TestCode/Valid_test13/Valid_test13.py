@@ -5,6 +5,7 @@ from logger import Valid_logger
 from winlog import WindowsEventLogger
 from learning import Learning
 from sensitivity_detecter import Sensitiviy_Detecter
+from lows_detecter import Lows_Detecter
 
 SETTING_PATH = Path(r"D:\Develop\SoundValid\v2.0.0\TestCode\Valid_test13\soundvalid_setting.yaml")
 
@@ -34,27 +35,27 @@ def main():
 
     elif args.mode == "anomaly_detection":
         logger.app_logger.info("異常検知モードで実行")
-        # 騒音計マイク感度異常検知クラス
-        sn = Sensitiviy_Detecter(settings, logger)
+        # # 騒音計マイク感度異常検知クラス
+        sd = Sensitiviy_Detecter(settings, logger)
         # 正常パラメータ読み込み
-        sn.load_normal_parameters()
+        sd.load_normal_parameters()
         # 異常検知実行
-        msg += sn.do_valid()
+        msg += sd.do_valid()
 
-    # 騒音計マイク故障検知クラス
-    # an = Anormaly_Detecter(settings, logger)
-    # # 正常パラメータ読み込み
-    # an.load_normal_parameters()
-    # # 異常検知実行
-    # msg += an.do_valid()
+        # 騒音計マイク故障検知クラス 途中
+        ld = Lows_Detecter(settings, logger)
+        # # 正常パラメータ読み込み
+        ld.load_normal_parameters()
+        # # 異常検知実行
+        msg += ld.do_valid()
 
-    # if msg != []:
-    # # 異常検知メッセージをwindowsアプリケーションログ出力
-    #     logger.app.info(f"{len(msg)}件の異常を検知")
-    #     msg.insert(0, "マイク異常検知実験")
-    #     winlogger.warning('\n'.join(msg))
-    # else:
-    #     logger.app.info("異常検知メッセージなし")
+    if msg != []:
+    # 異常検知メッセージをwindowsアプリケーションログ出力
+        logger.app_logger.info(f"{len(msg)}件の異常を検知")
+        msg.insert(0, "マイク異常検知実験")
+        winlogger.warning('\n'.join(msg))
+    else:
+        logger.app_logger.info("異常検知メッセージなし")
 
 if __name__ == "__main__":
     main()

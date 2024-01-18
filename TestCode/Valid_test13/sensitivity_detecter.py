@@ -115,13 +115,18 @@ class Sensitiviy_Detecter(Detecter):
         # 指定した桁の数を取得する
         num = int(str(abs(cal))[decimal_point - 1])
         if num == 4:
-            tolerance_upper = tolerance  - decimal
-            tolerance_floor = (-1 * tolerance) - decimal
+            tolerance_lower = (-1*tolerance) + decimal
+            tolerance_upper = tolerance + decimal
         elif num == 3:
-            tolerance_upper = tolerance  +   decimal
-            tolerance_floor =  (-1*tolerance) - (-1*decimal)
+            tolerance_lower =  (-1*tolerance) - (1-decimal)
+            tolerance_upper = tolerance - (1-decimal)
 
-        return freqs, tolerance_floor, tolerance_upper, cal
+        if tolerance_lower > 0:
+            tolerance_lower = 0.0
+        elif tolerance_upper < 0:
+            tolerance_upper = 0.0
+
+        return freqs, tolerance_lower, tolerance_upper, cal
 
     def _get_target_parms(self, stid, st_time, freq, reload_limit_num, params = None):
         # データ探索開始日時初期化
@@ -137,7 +142,7 @@ class Sensitiviy_Detecter(Detecter):
             event_time, path = self.get_target_event_time(stid, time, direction = "backward")
             # print(event_time,freq)
             if not event_time:
-                self.logger.app_logger.eroor("データを必要数集められませんでした[必要数:{},不足数{}]".format(self.sample_size,self.sample_size - len(params)))
+                self.logger.app_logger.error("データを必要数集められませんでした[必要数:{},不足数{}]".format(self.sample_size,self.sample_size - len(params)))
                 return False
 
             fs, data = self.sp.wav_load(path)
@@ -192,23 +197,21 @@ class Sensitiviy_Detecter(Detecter):
                 break
         return params, count
 
-    def _jadge_sensivity(self, cal, stid, freq, params, tolerance_floor, tolerance_upper, day):
+    def _jadge_sensivity(self, cal, stid, freq, params, tolerance_lower, tolerance_upper, day):
         """
         感度異常診断実行
         """
         mean = np.mean(params)
-        m_lower, m_upper = self.cal_mean_interval(params, self.confidence_level)
+        m_lower, m_upper = self.cal_mean_interval(params, self.sensitivity_confidence_level)
 
         n_lower = self.normal_params[stid]["peak_interval_lower"][str(freq)]
         n_upper = self.normal_params[stid]["peak_interval_upper"][str(freq)]
-        sc.draw_sensitivity_histogram(cal, stid, freq, params, mean, m_lower, m_upper, n_lower, n_upper, tolerance_floor, tolerance_upper, self.chart_save_directory, day)
+        sc.draw_sensitivity_histogram(cal, stid, freq, params, mean, m_lower, m_upper, n_lower, n_upper, tolerance_lower, tolerance_upper, self.chart_save_directory, day)
 
-        print(m_lower, m_upper)
-
-        if n_lower + tolerance_floor > m_lower:
+        if n_lower + tolerance_lower > mean:
             self.logger.app_logger.debug(f"異常 - {freq} - マイク感度低い")
             return True
-        elif n_upper + tolerance_upper < m_upper:
+        elif n_upper + tolerance_upper < mean:
             self.logger.app_logger.debug(f"異常 - {freq} - マイク感度高い")
             return True
         else:

@@ -56,8 +56,9 @@ class SignalProcesses(object):
 
         return oct_freq_mask.reshape([-1,1])
 
-    def cal_CPB_mean_level(self, signal, oct_mask):
+    def cal_mean_level(self, signal, detection_width):
 
+        rfft = np.fft.rfft
         frame_num = int(np.floor((signal.shape[0] - self.tap) / self.hop_len)) + 1
 
         if frame_num < 1:
@@ -65,14 +66,22 @@ class SignalProcesses(object):
             self.logger.app_logger.error(msg)
             return False
 
-        rfft = np.fft.rfft
+        hop_len_count = self.overlap_rate * detection_width
+
         f = []
+        result = []
+
+        count = hop_len_count
         for i in range(frame_num):
             frame = self.window_func * signal[(self.hop_len * i):(self.tap + (self.hop_len * i))]
             f.append(rfft(frame, axis=0))
+            count += hop_len_count
 
-        S = (np.mean(np.abs(np.stack(f, axis=0)), axis = 0))
-        result = 10 * np.log10(np.sum(S[oct_mask[:,0]], axis = 0))
+            if count >= detection_width:
+                S = (np.mean(np.abs(np.stack(f, axis=0)), axis = 0))
+                result.append(10 * np.log10(np.sum(S, axis = 0)))
+                f = []
+                count = 0
 
         return result
 

@@ -29,7 +29,10 @@ class Settings(object):
         self.__return_days = int(detector_common_settings["return_days"])
         self.__valid_common_calibrated_time = bool(detector_common_settings["valid_common_calibrated_time"])
         self.__common_calibrated_time = str(detector_common_settings["common_calibrated_time"])
-        self.__confidence_level = float(detector_common_settings["confidence_level"])
+
+        self.__lows_confidence_level = float(detector_common_settings["lows_confidence_level"])
+        self.__sensitivity_confidence_level = float(detector_common_settings["sensitivity_confidence_level"])
+
         self.__sample_size = int(detector_common_settings["sample_size"])
         self.__reload_limit_of_data = float(detector_common_settings["reload_limit_of_data"])
         self.__learning_target_freqs = list(detector_common_settings["learning_target_freqs"])
@@ -94,8 +97,12 @@ class Settings(object):
         return self.__common_calibrated_time
 
     @property
-    def confidence_level(self):
-        return self.__confidence_level
+    def lows_confidence_level(self):
+        return self.__lows_confidence_level
+
+    @property
+    def sensitivity_confidence_level(self):
+        return self.__sensitivity_confidence_level
 
     @property
     def sample_size(self):

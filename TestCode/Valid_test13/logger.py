@@ -43,7 +43,7 @@ class Valid_logger():
         stream_handler.setFormatter(formatter)
 
         # コンソール出力するログレベルを設定
-        stream_handler.setLevel(logging.DEBUG)
+        stream_handler.setLevel(logging.INFO)
 
         # コンソール出力ハンドラをロガーに追加
         logger.addHandler(stream_handler)
@@ -75,7 +75,7 @@ class Valid_logger():
         logger = logging.getLogger(logger_name)
 
         # ログレベルをWARNING以上に設定
-        logger.setLevel(logging.INFO)
+        logger.setLevel(logging.WARNING)
 
         # ログファイル名を作成
         filename = datetime.now().strftime('%Y%m%d') + "_result.log"

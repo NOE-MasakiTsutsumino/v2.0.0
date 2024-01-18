@@ -1,3 +1,9 @@
+""" encoding utf-8
+
+異常検知共通機能クラス
+"""
+
+# imports
 from datetime import datetime, timedelta ,timedelta
 import os
 import glob
@@ -5,48 +11,28 @@ import numpy as np
 from scipy import stats
 import json
 
+# code
 class Detecter(object):
-
     def __init__(self, settings, logger):
+        self.__logger = logger
+        self.__settings = settings
+        self.__logger.app.debug("instantized")
 
-        self.logger = logger
-        self.settings = settings
-
-        self.wav_directory = settings.wav_directory
-        self.chart_save_directory = settings.chart_save_directory
-        self.system_start_date = datetime.strptime(settings.system_start_date, '%Y-%m-%d')
-        self.target_day_list = self.__get_target_days(settings.return_days)
-        self.station_settings = settings.station_settings
-        self.target_station_list = self.__get_target_station_list(self.station_settings)
-
-        self.lows_confidence_level = settings.lows_confidence_level
-        self.sensitivity_confidence_level = settings.sensitivity_confidence_level
-
-        # 実行対象の測定局が存在しない場合に終了する
-        if not self.target_station_list:
-            msg = "実行対象の測定局がないので終了します(設定ファイルのexecution:trueなし)"
-            self.logger.app_logger.info(msg)
-            exit()
-
-    def __get_target_days(self, return_days):
+    def _get_target_days(self, return_days):
 
         target_day_list = []
         for i in range(return_days):
-            target_day_list.append(datetime.now().date() - timedelta(days = i + 1))
+            target_day = datetime.now().date() - timedelta(days = i + 1)
+            if target_day >= self.settings.system_start_date:
+                target_day_list.append(datetime.now().date() - timedelta(days = i + 1))
 
         return target_day_list
 
-    def __get_target_station_list(self, station_settings):
-
-        """
-        設定ファイルの情報から異常検知実行対象になっている測定局IDのリストを作る
-        """
-
+    def _get_target_station_list(self, settings, keyword):
         target_station_list = []
-        for station in station_settings:
-            if station["execution"] == True:
+        for station in settings.station_settings:
+            if station[keyword] == True:
                 target_station_list.append(station["stationid"])
-
         if target_station_list == []:
             return False
 
@@ -159,3 +145,11 @@ class Detecter(object):
             return False
         else:
             return True
+
+    @property
+    def logger(self):
+        return self.__logger
+
+    @property
+    def settings(self):
+        return self.__settings

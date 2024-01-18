@@ -1,5 +1,10 @@
+""" encoding utf-8
+
+異常検知用統計パラメータ算出保存クラス
+"""
+# imports
+# from signals import SignalProcesses
 from detecter import Detecter
-from signals import SignalProcesses
 from datetime import datetime, timedelta, timedelta
 import numpy as np
 import json
@@ -9,58 +14,38 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+# code
 class Learning(Detecter):
-
-    """
-    正常データを算出してjsonファイルで出力するクラス
-    """
 
     def __init__(self, settings, logger):
         super().__init__(settings, logger)
-        self.sp = SignalProcesses(settings, logger)
-
-        self.confidence_level = settings.lows_confidence_level
-        self.sensitivity_confidence_level = settings.sensitivity_confidence_level
-        self.sample_size = settings.sample_size
-        self.peak_level_percentile = settings.peak_level_percentile
-        self.floor_level_percentile = settings.floor_level_percentile
-        self.learning_target_freqs = settings.learning_target_freqs
-
-        # 全測定局共通の校正完了時刻を使用する場合の設定
-        self.valid_common_calibrated_time = settings.valid_common_calibrated_time
-        if self.valid_common_calibrated_time:
-            try:
-                self.common_calibrated_time = datetime.strptime(settings.common_calibrated_time, '%Y-%m-%d %H:%M:%S')
-            except KeyError as e:
-                self.logger.app_logger.error(f"設定ファイルにcommon_calibrated_timeがありません")
-                raise e
-
-        self.logger.app_logger.debug("Learning class instantized")
+        self.logger.app.debug("instantized")
 
     def fit(self):
-
-        # 正常パラメータ初期化
-        self.norm = {}
-
+        # 統計パラメータ初期化
+        # self.norm = {}
+        # 実行対象測定局リスト作成
+        target_station_list = self._get_target_station_list(self.settings,"learnig_valid")
+        print(target_station_list)
         # 測定局ごとにループ処理
-        for stid in self.target_station_list:
+        # for stid in self.target_station_list:
 
-            # 測定局の最終校正完了日時
-            if self.valid_common_calibrated_time:
-                calibrated_time = self.common_calibrated_time
-            else:
-                calibrated_time = self.station_settings["id" == stid]["calibrated_time"]
-                calibrated_time = datetime.strptime(calibrated_time, '%Y-%m-%d %H:%M:%S')
+        #     # 測定局の最終校正完了日時
+        #     if self.valid_common_calibrated_time:
+        #         calibrated_time = self.common_calibrated_time
+        #     else:
+        #         calibrated_time = self.station_settings["id" == stid]["calibrated_time"]
+        #         calibrated_time = datetime.strptime(calibrated_time, '%Y-%m-%d %H:%M:%S')
 
-            params = self.__cal_normal_params_function(stid, calibrated_time)
+        #     params = self.__cal_normal_params_function(stid, calibrated_time)
 
-            if params:
-                self.norm[stid] = params
-                self.logger.app_logger.debug(f"Normal parameter calculation completed - {stid}")
+        #     if params:
+        #         self.norm[stid] = params
+        #         self.logger.app_logger.debug(f"Normal parameter calculation completed - {stid}")
 
-        self.logger.app_logger.debug("learning complete")
+        # self.logger.app_logger.debug("learning complete")
 
-        return self.norm
+        # return self.norm
 
     def save(self, buckup = True):
 
