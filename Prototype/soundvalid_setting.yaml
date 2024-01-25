@@ -1,5 +1,5 @@
 # encoding utf-8
-wav_directory: "D:\\Develop\\SoundValid\\v2.0.0\\TestCode\\audio"
+wav_directory: "D:\\Diana\\新千歳空港\\WAVE"
 log_save_directory: "D:\\Develop\\SoundValid\\v2.0.0\\Prototype"
 chart_save_directory: "D:\\Develop\\SoundValid\\v2.0.0\\Prototype"
 signal_process_settings:
@@ -9,15 +9,16 @@ signal_process_settings:
     mean_time: 0.5      # 周波数分析1サンプルの平均時間[sec]
 detector_common_settings:
     system_start_date: "2022-12-01" # これ以前の日付のWAVEファイルは探さない
-    return_days: 1  # 何日前から遡って分析実行するか
-    valid_common_calibrated_time: true # 測定局共通の校正完了時刻の使用
-    common_calibrated_time: "2023-12-01 00:00:00" # 全測定局共通の校正完了時刻
-    learning_sample_size: 30 # 統計パラメータ算出サンプルサイズ
-    learning_target_freqs: [250,500,1000,2000] #　統計パラメータ算出対象周波数
+    return_days: 7  # 何日前から遡って分析実行するか
+    valid_common_calibrated_time: false # 測定局共通の校正完了時刻の使用
+    common_calibrated_time: "2022-12-01 00:00:00" # 全測定局共通の校正完了時刻
+    learning_sample_size: 385 # 統計パラメータ算出サンプルサイズ
+    learning_target_freqs: [250,500,1000,2000] # 統計パラメータ算出対象周波数
     sensitivity_confidence_level: 0.95 # 騒音計感度チェック_統計パラメータ信頼係数
     sensitivity_sample_size: 30 # 騒音計感度チェック_最小サンプルサイズ
     sensitivity_reload_limit_size: 0.50 # 騒音計感度チェック_データリロード可能率
     sensitivity_peak_level_percentile: 90 #
+    valid_sensitivity_save_chart: true # 分析結果画像を出力するか否か
     failure_confidence_level: 0.99 # 故障検知_統計パラメータ信頼係数
     failure_floor_level_percentile: 10 #
 station_settings: # 測定局別設定
@@ -27,7 +28,7 @@ station_settings: # 測定局別設定
       calibrated_time: "2022-12-01 00:00:00"
       internal_cal_level: 124.19
       sensitivity_valid: true
-      sensitivity_target_freqency: [250,500,1000,2000]
+      sensitivity_target_freqency: [500,1000]
       sensitivity_tolerance: 0.5
       failure_valid: true
       failure_target_freqency: [250,500]

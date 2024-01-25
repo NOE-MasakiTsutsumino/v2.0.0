@@ -33,14 +33,12 @@ class ValidLogger():
         logger.setLevel(logging.INFO)
         # ロギングメッセージフォーマット
         formatter = logging.Formatter('%(asctime)s - %(module)s - %(funcName)s - %(levelname)s: %(message)s')
-        # ロギングレベル設定
-        logger.setLevel(logging.INFO)
         # コンソール出力ハンドラ追加
         stream_handler = logging.StreamHandler()
         # ロギングメッセージフォーマット設定
         stream_handler.setFormatter(formatter)
         # コンソール出力 ロギングレベル設定
-        stream_handler.setLevel(logging.INFO)
+        stream_handler.setLevel(logging.DEBUG)
         # コンソール出力ハンドラ追加
         logger.addHandler(stream_handler)
         # ログファイル名設定
@@ -62,7 +60,7 @@ class ValidLogger():
     def __get_result_logger(self, logger_name: str):
         logger = logging.getLogger(logger_name)
         # ロギングレベル設定
-        logger.setLevel(logging.WARNING)
+        logger.setLevel(logging.INFO)
         # ログファイル名設定
         filename = datetime.now().strftime('%Y%m%d') + "_result.log"
         # ログファイルパス作成

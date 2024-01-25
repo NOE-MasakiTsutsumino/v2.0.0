@@ -51,45 +51,59 @@ class Settings(object):
     def __init__(self, setting_file_path: Path, logger):
 
         self.__AVAILABLE_FREQS = [250,500,1000,2000,4000]
+        self.logger = logger
 
         with setting_file_path.open(mode='r', encoding='utf-8') as yml:
             settings = yaml.safe_load(yml)
 
-        self.logger = logger
+        class SettingPath(Settings):
+            wav_directory: Path
+            log_save_directory: Path
+            chart_save_directory: Path
 
-        self.__wav_directory = Path(settings['wav_directory'])
-        self.__log_save_directory = Path(settings['log_save_directory'])
-        self.__chart_save_directory = Path(settings['chart_save_directory'])
+        class SignalProcessSettings(Settings):
+            tap: int
+            overlap_rate: float
+            window: str
+            mean_time: float
 
-        signal_process_settings = dict(settings['signal_process_settings'])
-        self.__tap = int(signal_process_settings["tap"])
-        self.__overlap_rate = float(signal_process_settings["overlap_rate"])
-        self.__window = str(signal_process_settings["window"])
-        self.__mean_time = float(signal_process_settings["mean_time"])
+        class DetectorCommonSettings(Settings):
+            system_start_date: str
+            return_days: int
+            valid_common_calibrated_time: bool
+            common_calibrated_time: str
+            learning_sample_size: int
+            learning_target_freqs: list[int]
+            sensitivity_confidence_level: float
+            sensitivity_sample_size: int
+            sensitivity_reload_limit_size: float
+            sensitivity_peak_level_percentile: float
+            valid_sensitivity_save_chart: float
+            failure_confidence_level: float
+            failure_floor_level_percentile: float
 
-        detector_common_settings = dict(settings['detector_common_settings'])
-        self.__system_start_date = str(detector_common_settings["system_start_date"])
-        self.__return_days = int(detector_common_settings["return_days"])
-        self.__valid_common_calibrated_time = bool(detector_common_settings["valid_common_calibrated_time"])
-        self.__common_calibrated_time = str(detector_common_settings["common_calibrated_time"])
+        class StationSettings(Settings):
+            stationid: str
+            stationname: str
+            learnig_valid: bool
+            calibrated_time: str # Exsample "2022-12-01 00:00:00"
+            internal_cal_level: float
+            sensitivity_valid: bool
+            sensitivity_target_freqency: list[int]
+            sensitivity_tolerance: float
+            failure_valid: bool
+            failure_target_freqency: list[int]
+            failure_tolerance: float
 
-        self.__learning_sample_size = int(detector_common_settings["learning_sample_size"])
-        self.__learning_target_freqs = list(detector_common_settings["learning_target_freqs"])
-        self.__sensitivity_confidence_level = float(detector_common_settings["sensitivity_confidence_level"])
-        self.__sensitivity_sample_size = int(detector_common_settings["sensitivity_sample_size"])
-        self.__sensitivity_reload_limit_size = float(detector_common_settings["sensitivity_reload_limit_size"])
-        self.__sensitivity_peak_level_percentile = float(detector_common_settings["sensitivity_peak_level_percentile"])
-        self.__valid_sensitivity_save_chart = float(detector_common_settings["valid_sensitivity_save_chart"])
-        self.__failure_confidence_level = float(detector_common_settings["failure_confidence_level"])
-        self.__failure_floor_level_percentile = float(detector_common_settings["failure_floor_level_percentile"])
-        self.__station_settings = list(settings['station_settings'])
-        self.logger.app.info("アプリケーション設定ファイルロード成功")
-        self.__check_settings_format()
-        self.__check_signal_process_settings_format()
-        self.__check_detector_common_settings_format()
-        self.logger.app.info("アプリケーション設定パラメータフォーマットチェック完了")
-        self.__check_station_settings_format()
-        self.logger.app.info("測定局別設定パラメータフォーマットチェック完了")
+
+        # self.__station_settings = list(settings['station_settings'])
+        # self.logger.app.info("アプリケーション設定ファイルロード成功")
+        # self.__check_settings_format()
+        # self.__check_signal_process_settings_format()
+        # self.__check_detector_common_settings_format()
+        # self.logger.app.info("アプリケーション設定パラメータフォーマットチェック完了")
+        # self.__check_station_settings_format()
+        # self.logger.app.info("測定局別設定パラメータフォーマットチェック完了")
 
         # システム運用開始日時をdatetime型に変換
         self.system_start_date = datetime.strptime(self.system_start_date,'%Y-%m-%d')

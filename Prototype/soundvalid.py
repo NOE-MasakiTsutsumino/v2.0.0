@@ -4,8 +4,9 @@ from settings import Settings
 from logger import ValidLogger
 from winlog import WindowsEventLogger
 from learning import Learning
-# from sensitivity_detecter import Sensitiviy_Detecter
-# from lows_detecter import Lows_Detecter
+from sensitivity_detecter import SensitiviyDetecter
+from failure_detecter import FailureDetecter
+
 import sys
 import yaml
 from os import path
@@ -25,9 +26,9 @@ def main():
         try:
             log_save_directory = Path(yaml.safe_load(yml)['log_save_directory'])
         except Exception as e:
-            print(f"log_save_directoryの取得に失敗、設定ファイルを確認してください-{e}")
-            exit(1)
-    assert path.isdir(log_save_directory),f"log_save_directory:指定パスが存在しません{log_save_directory}"
+            msg = f"log_save_directoryの取得に失敗、設定ファイルを確認してください[{e}]"
+            raise Exception(msg)
+    assert path.isdir(log_save_directory),f"log_save_directory:指定パスが存在しません[{log_save_directory}]"
 
     # アプリケーションロガー
     LOGGER = ValidLogger(log_save_directory)
@@ -36,29 +37,23 @@ def main():
     # Windowsイベントログ
     WIN_LOGGER = WindowsEventLogger("soundvalid_prototype",LOGGER)
 
-    msg = []
     if args.mode == "learning":
-        LOGGER.app.info("正常データ保存モードで実行")
-        ln = Learning(settings,LOGGER)
-        ln.fit()
-        # ln.save()
-        LOGGER.app.info("正常パラメータ算出・保存完了")
+        LOGGER.app.info("mode learning:正常パラメータ保存モードで実行")
+        Learning(settings,LOGGER).fit()
+        LOGGER.app.info("実行終了")
     elif args.mode == "anomaly_detection":
-        pass
-        # logger.app_logger.info("異常検知モードで実行")
-        # # # 騒音計マイク感度異常検知クラス
-        # sd = Sensitiviy_Detecter(settings, logger)
-        # # 正常パラメータ読み込み
-        # sd.load_normal_parameters()
-        # # 異常検知実行
-        # msg += sd.do_valid()
-
-        # # 騒音計マイク故障検知クラス 途中
-        # ld = Lows_Detecter(settings, logger)
-        # # # 正常パラメータ読み込み
-        # ld.load_normal_parameters()
-        # # # 異常検知実行
-        # msg += ld.do_valid()
+        anormaly_msg_list = []
+        LOGGER.app.info("異常検知モードで実行")
+        # 騒音計マイク感度チェッククラス
+        try:
+            anormaly_msg_list += SensitiviyDetecter(settings, LOGGER).do_valid()
+        except BaseException as e:
+            LOGGER.app.error(f"騒音計マイク感度チェック失敗 {e}")
+        # 騒音計マイク故障検知クラス 途中
+        try:
+            anormaly_msg_list += FailureDetecter(settings, LOGGER).do_valid()
+        except BaseException as e:
+            LOGGER.app.error(f"騒音計マイク故障チェック失敗 {e}")
 
     # if msg != []:
     # # 異常検知メッセージをwindowsアプリケーションログ出力
