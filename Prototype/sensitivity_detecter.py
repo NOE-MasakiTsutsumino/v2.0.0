@@ -6,7 +6,7 @@ from signals import SignalProcesses
 from datetime import datetime, timedelta, time, timedelta
 import numpy as np
 from math import floor
-import save_chart as sc
+from save_chart import DrawCharts as dc
 import os
 import glob
 from math import modf
@@ -226,7 +226,7 @@ class SensitiviyDetecter(Detecter):
             msg = f"正常パラメータpeak_interval_lowerもしくはpeak_interval_upperの読込失敗"
             raise Exception(msg)
         if self.settings.valid_sensitivity_save_chart:
-            sc.draw_sensitivity_histogram(cal, stid, freq, params, mean, m_lower, m_upper, n_lower, n_upper, tolerance_lower, tolerance_upper, self.settings.chart_save_directory, day)
+            dc.draw_sensitivity_histogram(cal, stid, freq, params, mean, m_lower, m_upper, n_lower, n_upper, tolerance_lower, tolerance_upper, self.settings.chart_save_directory, day)
             self.logger.app.debug(f"感度チェック分析分析画像出力成功")
         if n_lower + tolerance_lower > mean:
             self.logger.app.info(f"異常-{freq}Hz-マイク感度低い")

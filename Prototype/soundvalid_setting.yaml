@@ -9,7 +9,7 @@ signal_process_settings:
     mean_time: 0.5      # 周波数分析1サンプルの平均時間[sec]
 detector_common_settings:
     system_start_date: "2022-12-01" # これ以前の日付のWAVEファイルは探さない
-    return_days: 7  # 何日前から遡って分析実行するか
+    return_days: 1  # 何日前から遡って分析実行するか
     valid_common_calibrated_time: false # 測定局共通の校正完了時刻の使用
     common_calibrated_time: "2022-12-01 00:00:00" # 全測定局共通の校正完了時刻
     learning_sample_size: 385 # 統計パラメータ算出サンプルサイズ
@@ -27,9 +27,9 @@ station_settings: # 測定局別設定
       learnig_valid: true
       calibrated_time: "2022-12-01 00:00:00"
       internal_cal_level: 124.19
-      sensitivity_valid: true
+      sensitivity_valid: false
       sensitivity_target_freqency: [500,1000]
       sensitivity_tolerance: 0.5
       failure_valid: true
-      failure_target_freqency: [250,500]
+      failure_target_freqency: [250,500,1000,2000]
       failure_tolerance: 1.0

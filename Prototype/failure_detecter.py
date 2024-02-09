@@ -5,7 +5,7 @@ from detecter import Detecter
 from signals import SignalProcesses
 from glob import glob
 import os
-from functools import cache
+from save_chart import DrawCharts as dc
 
 # code
 class FailureDetecter(Detecter):
@@ -42,12 +42,17 @@ class FailureDetecter(Detecter):
     def _do_valid_station(self, stationid):
         # 出力初期化
         msg_list = []
+        draw_data = {}
         # 測定局設定読込
         target_freqs, tolerance = self.__load_station_settings(stationid)
+        for freq in target_freqs:
+            draw_data[str(freq)] = []
+
         # 日別処理
         for day in self.target_day_list:
             # 実音データの格納ディレクトリパス作成
             target_dir = os.path.join(self.settings.wav_directory, day.strftime('%Y%m'), stationid, day.strftime('%Y%m%d'))
+
             try:
                 day_wav_file_list = glob(os.path.join(target_dir,'*.WAV'))
                 if len(day_wav_file_list) < 1:
@@ -58,6 +63,7 @@ class FailureDetecter(Detecter):
                 msg = f"{stationid}-{day}:WAVファイルリストの取得に失敗しました[{e}]"
                 self.logger.app.error(msg)
                 continue
+
             # 実音ファイル別処理
             for file in day_wav_file_list:
                 # 実音ファイル読み込み
@@ -66,10 +72,12 @@ class FailureDetecter(Detecter):
                 anormaly_freqs = []
                 # オクターブバンド別処理
                 for freq in target_freqs:
+
                     # 異常検知パラメータ算出
                     sub_data = data[:,0]
                     slm_data = data[:,1]
                     oct_mask = self.sp.make_oct_mask(freq, fs)
+
                     try:
                         slm_floor_lv = self.sp.cal_CPB_percentile_level(slm_data, oct_mask, fs, self.settings.failure_floor_level_percentile)
                         sub_floor_lv = self.sp.cal_CPB_percentile_level(sub_data, oct_mask, fs, self.settings.failure_floor_level_percentile)
@@ -78,6 +86,7 @@ class FailureDetecter(Detecter):
                         self.logger.app.error(msg)
                         continue
                     parameter = slm_floor_lv-sub_floor_lv
+                    draw_data[str(freq)].append(parameter)
                     try:
                         jadge, msg = self.__judge_failure(stationid, parameter, freq, tolerance)
                     except BaseException as e:
@@ -85,13 +94,19 @@ class FailureDetecter(Detecter):
                         continue
                     if jadge:
                         anormaly_freqs.append(freq)
-                        self.logger.result.warning(f"{stationid}-{os.path.basename(file)}-{str(freq)}-{msg}")
+                        self.logger.result.warning(f"{stationid}-{os.path.basename(file)}-{str(freq)}Hz-{msg}")
                 if anormaly_freqs != []:
                     msg = "{}:騒音計故障チェック閾値超過[{}]-{}".format(stationid, ",".join(map(str, anormaly_freqs)), os.path.basename(file))
                     msg_list.append(msg)
+
+            dc.draw_failure_histogram(stationid, day, target_freqs, draw_data, tolerance, self.normal_parameters, self.settings.chart_save_directory)
+            for freq in target_freqs:
+                draw_data[str(freq)] = []
+
             if msg_list == []:
                 self.logger.result.info(f"{stationid}-{day}-マイク故障チェック異常なし")
                 self.logger.app.info(f"{stationid}-{day}-マイク故障チェック異常なし")
+
         return msg_list
 
     def __load_station_settings(self, stationid):
@@ -101,10 +116,14 @@ class FailureDetecter(Detecter):
         return target_freqs, tolerance
 
     def __judge_failure(self, stationid, parameter, freq, tolerance):
-        if parameter > self.normal_parameters[stationid]["floor_interval_upper"][str(freq)] + tolerance:
+
+        interval_low = self.normal_parameters[stationid]["floor_interval_upper"][str(freq)]
+        interval_up = self.normal_parameters[stationid]["floor_interval_lower"][str(freq)]
+
+        if parameter > interval_low + tolerance:
             msg = f"異常-故障チェック正常範囲超過"
             return True, msg
-        elif parameter < self.normal_parameters[stationid]["floor_interval_lower"][str(freq)] - tolerance:
+        elif parameter < interval_up - tolerance:
             msg = f"異常-故障チェック正常範囲未満"
             return True, msg
         else:

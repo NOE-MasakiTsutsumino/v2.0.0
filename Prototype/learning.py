@@ -11,7 +11,7 @@ import json
 import os
 import shutil
 import pandas as pd
-from save_chart import plot_histogram_learning_parameters
+from save_chart import DrawCharts as dc
 from matplotlib import pyplot as plt
 
 # code
@@ -109,7 +109,7 @@ class Learning(Detecter):
             time = event_time + timedelta(seconds = 1)
 
         while(1):
-            fig = plot_histogram_learning_parameters(peak_diffs,stationid,freq,"peak_diffs")
+            fig = dc.draw_learning_parameters_histogram(peak_diffs,stationid,freq,"peak_diffs")
             plt.show(block=False)
             jdg = input("Do you want to perform outlier exclusion by quantiles? y/n\n")
             if jdg == "y":
@@ -124,7 +124,7 @@ class Learning(Detecter):
                 plt.close()
 
         while(1):
-            fig = plot_histogram_learning_parameters(floor_diffs,stationid,freq,"floor_diffs")
+            fig = dc.draw_learning_parameters_histogram(floor_diffs,stationid,freq,"floor_diffs")
             plt.show(block=False)
             jdg = input("Do you want to perform outlier exclusion by quantiles? y/n\n")
             if jdg == "y":
