@@ -9,6 +9,8 @@ from scipy import stats
 from functools import cache
 from scipy.stats import kurtosis, skew
 
+# テストコード用関数たち
+
 def get_event_time(stid, wav_directory, st_time, next=False):
 
     if next:
