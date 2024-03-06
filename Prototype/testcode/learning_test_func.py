@@ -45,6 +45,65 @@ def get_event_time(stid, wav_directory, st_time, next=False):
 
     return get_event_time(stid, wav_directory, st_time, next=True)
 
+def get_target_event_time(stid, wav_directory, st_time, next=False, direction="advance"):
+
+    if next == True and direction == "advance":
+        st_time = (st_time + timedelta(days = 1)).replace(hour = 0, minute = 0, second = 0)
+    elif next == True and direction == "backward":
+        st_time = (st_time - timedelta(days = 1)).replace(hour = 23, minute = 59, second = 59)
+
+    if st_time.date() >= datetime.now().date() and next == False:
+        msg = "st_timeは今日より前の日付を指定して下さい:{}".format(st_time)
+        return False, msg
+
+    elif st_time.date() >= datetime.now().date() and next == True and direction == "advance":
+        msg = "{}-今日より先の日付は探せない-{}".format(stid,st_time.date())
+        return False, msg
+
+    elif st_time.date() < datetime(year=2022,month=12,day=1).date() and next == True and direction == "backward":
+        msg = "{}-これ以上前の日付は探せない:{}".format(stid, datetime(year=2022,month=12,day=1))
+        return False, msg
+
+    target_dir = os.path.join(wav_directory, st_time.strftime('%Y%m'), stid, st_time.strftime('%Y%m%d'))
+
+    if os.path.isdir(target_dir) == False:
+        return get_target_event_time(stid, wav_directory, st_time, next = True, direction = direction)
+
+    wav_list = glob.glob(os.path.join(target_dir,'**','*.WAV'), recursive = True)
+
+    if wav_list == []:
+        return get_target_event_time(stid, wav_directory, st_time, next = True, direction = direction)
+
+    day_event_time_list = []
+    for file in wav_list:
+        fname = os.path.splitext(os.path.basename(file))[0]
+        day_event_time_list.append(datetime.strptime(fname, '%y%m%d%H%M%S'))
+    wav_list.clear()
+
+    if direction == "advance":
+        day_event_time_list = sorted(day_event_time_list,reverse=False)
+    elif direction == "backward":
+        day_event_time_list = sorted(day_event_time_list,reverse=True)
+
+    # waveファイル名から騒音イベント時刻を得て指定時間との差を求める
+    for event_time in day_event_time_list:
+
+        if direction == "advance":
+            if event_time == st_time or event_time >= st_time:
+                path = os.path.join(wav_directory, event_time.strftime('%Y%m'), stid, st_time.strftime('%Y%m%d'),
+                                    datetime.strftime(event_time, '%y%m%d%H%M%S') + ".WAV")
+                # 成功
+                return event_time, path
+        elif direction == "backward":
+            if event_time == st_time or event_time <= st_time:
+                path = os.path.join(wav_directory, event_time.strftime('%Y%m'), stid, st_time.strftime('%Y%m%d'),
+                                    datetime.strftime(event_time, '%y%m%d%H%M%S') + ".WAV")
+                # 成功
+                return event_time, path
+
+    return get_target_event_time(stid, wav_directory, st_time, next = True, direction = direction)
+
+
 def wav_load(wav_path) -> np.ndarray:
 
     try:
