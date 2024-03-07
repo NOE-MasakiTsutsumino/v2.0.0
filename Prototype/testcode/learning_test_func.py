@@ -6,7 +6,6 @@ import wave
 from scipy.io import wavfile
 from scipy import signal as sg
 from scipy import stats
-from functools import cache
 from scipy.stats import kurtosis, skew
 
 # テストコード用関数たち
@@ -103,7 +102,6 @@ def get_target_event_time(stid, wav_directory, st_time, next=False, direction="a
 
     return get_target_event_time(stid, wav_directory, st_time, next = True, direction = direction)
 
-
 def wav_load(wav_path) -> np.ndarray:
 
     try:
@@ -141,16 +139,6 @@ def detect_diff_data(signal, tap, oct_freq_masks, fs, mean_time, percentile):
     slm_data = signal[:,1]
     sub_peak_lv, _ = cal_CPB_percentile_values(sub_data, oct_freq_masks, tap, mean_time, window, fs, percentile)
     slm_peak_lv, _ = cal_CPB_percentile_values(slm_data, oct_freq_masks, tap, mean_time, window, fs, percentile)
-
-    # import matplotlib.pyplot as plt
-    # fig = plt.figure(figsize=(15, 3))
-    # height = sorted(level["1000"])
-    # plt.bar(range(len(level["1000"])),level["1000"],color = "orange")
-    # plt.hlines(sub_peak_lv[2], 0, len(level["1000"]), "blue", linestyles='dashed')
-    # plt.ylabel("level[dB]")
-    # plt.xlabel("sample")
-    # plt.ylim([30,50])
-    # plt.show()
 
     return list(map(diff, slm_peak_lv, sub_peak_lv))
 
@@ -215,48 +203,3 @@ def get_statics(data_list):
     ku = round(kurtosis(data_list),3)
 
     return n,std,se,mean,sk,ku
-
-# def cal_CPB_percentile_level(signal, center_freqs, oct_mask, tap, mean_time_sec, window, hop_len, fs, percentile):
-
-#     frame_num = int(np.floor((signal.shape[0] - tap) / hop_len)) + 1
-#     if frame_num < 1:
-#         msg = f"失敗:データ長がFFT点数{tap}に満たない"
-#         raise ValueError(msg)
-
-#     if signal.shape[0] < mean_time * tap:
-#         msg = f"失敗:データ長が指定の平均化時間{mean_time}秒に満たない"
-#         raise ValueError(msg)
-#     f=[]
-#     data = []
-#     L= np.array()
-#     rfft = np.fft.rfft
-#     hop_len_sec = hop_len * fs
-#     mean_time_count = hop_len_sec
-#     for i in range(frame_num):
-#         frame = window * signal[(hop_len * i):(tap + (hop_len * i))]
-#         f.append(rfft(frame, axis=0))
-#         mean_time_count += hop_len_sec
-#         if mean_time_count >= mean_time_sec:
-#             S = (np.mean(np.abs(np.stack(f, axis=0)), axis=0))
-#             for freq in center_freqs:
-#                 data.append(10*np.log10(np.sum(S[oct_mask[str(freq)][:,0]], axis=0)))
-#                 f = []
-#                 data = []
-#                 print(data)
-    #         L= np.vstack(L,data)
-    #         mean_time = hop_len_sec
-
-    # return np.percentile(L, percentile, axis=1)
-
-# def get_datum(signal, tap, oct_mask, fs, percentile):
-
-#     mean_time = 0.1
-#     window = sg.get_window("hamming",tap)
-#     overlap_rate = 0.5
-#     hop_len = int(tap * overlap_rate)
-
-#     sub_data = signal[:,0]
-#     slm_data = signal[:,1]
-#     slm_peak_lv = cal_CPB_percentile_level(slm_data, oct_mask, tap, mean_time, window, hop_len, fs, percentile)
-#     sub_peak_lv = cal_CPB_percentile_level(sub_data, oct_mask, tap, mean_time, window, hop_len, fs, percentile)
-#     return slm_peak_lv - sub_peak_lv

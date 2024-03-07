@@ -17,7 +17,7 @@ from scipy import stats
 wav_dir = Path(r"D:\Diana\新千歳空港\WAVE")      # WAVEファイルのパス
 stid = "CH53"                                   # 測定局ID
 start_day = datetime(year=2024,month=3,day=1)   # 分析開始日
-return_day = 465                                  # 遡る日数
+return_day = 465                                # 遡る日数
 sample_size = 100                               # 指定データ数
 
 center_freqs = [250,500,1000,2000]
