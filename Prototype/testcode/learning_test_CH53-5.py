@@ -20,7 +20,7 @@ start_day = datetime(year=2023,month=1,day=1)   ## 校正完了時間
 day_range = 500
 center_freqs = [250,500,1000,2000]
 tap = 1024
-percentile = 90
+percentile = 10
 mean_time_sec = 0.1
 
 rb = RobustScaler(with_centering=False,with_scaling=True)
