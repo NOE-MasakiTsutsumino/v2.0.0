@@ -1,1 +1,0 @@
-# anormaly_detecter.py

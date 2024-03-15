@@ -49,9 +49,7 @@ class DrawCharts():
         if not os.path.exists(fig_dir):
             os.makedirs(fig_dir)
         import csv
-        
-        
-        
+
         # ax = fig.add_subplot()
         for freq in target_freqs:
             fig = plt.figure()

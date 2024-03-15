@@ -10,130 +10,151 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 
-class Frame1(tk.Frame):
+class DeviceSetting(tk.Frame):
+    """
+    使用するapiとオーディオデバイスを選択させるための画面を表示するフレーム
+    """
     def __init__(self, master=None):
+        # ルート画面の設定継承
         super().__init__(master)
         self.master = master
         self.grid(row=0, column=0, sticky="nsew")
-        self.select_api_widgets()
+        # ウィジットの作成と配置
+        self.setting_widgets()
 
-    def select_api_widgets(self):
-        self.label1 = tk.Label(self)
-        self.label1["text"] = "select sound class"
-        self.label2 = tk.Label(self)
-        self.label2["text"] = "select input device"
+    def setting_widgets(self):
+        self.lb1 = tk.Label(self)
+        self.lb1["text"] = "select sound class"
+        self.lb2 = tk.Label(self)
+        self.lb2["text"] = "select input device"
 
+        # ホストマシンの使用可能なapi名リストを取得
         api_list = [hostapi["name"] for hostapi in sd.query_hostapis()]
-        self.combobox = ttk.Combobox(self,values=api_list,textvariable=tk.StringVar (),state="readonly",width=25)
-        self.combobox.bind('<<ComboboxSelected>>', self.get_device)
+        # apiの選択リストウィジットを作成
+        self.api_selecter = ttk.Combobox(self,values=api_list,textvariable=tk.StringVar (),state="readonly",width=25)
+        # 値が選択されたら使用可能なオーディオデバイスのリストを取得するイベント起動
+        self.api_selecter.bind('<<ComboboxSelected>>', self.get_device)
+        # オーディオデバイスの選択リストウィジットを作成
+        self.device_selecter = ttk.Combobox(self,textvariable=tk.StringVar(),state="readonly",width=25)
 
-        self.combobox2 = ttk.Combobox(self,textvariable=tk.StringVar(),state="readonly",width=25)
+        # 選択されたapiとdevice名を返して次の画面に遷移するボタン
+        self.button = tk.Button(self, text="OK",command=lambda: self.master.trangit_InputMoniter(self.api_selecter.get(),self.device_selecter.get()), height=2)
 
-        self.button = tk.Button(self, text="OK",command=lambda: self.master.trangit_frame2(self.combobox.get(),self.combobox2.get()), height=2)
-
-        self.label1.pack()
-        self.combobox.pack(fill=tk.X)
-        self.label2.pack()
-        self.combobox2.pack(fill=tk.X)
+        # ウィジット配置
+        self.lb1.pack()
+        self.api_selecter.pack(fill=tk.X)
+        self.lb2.pack()
+        self.device_selecter.pack(fill=tk.X)
         self.button.pack(fill=tk.X,pady=20)
 
     def get_device(self,event):
-        self.combobox2.set('')
-        api = self.combobox.get()
+        """api_selecterの値選択時に使用可能なオーディオデバイスを取得する
+        Args:
+            event (_type_): api_selecterの値選択時に発生するイベント
+        """
+        self.device_selecter.set('')
+        api = self.api_selecter.get()
         devise_info = get_sound_device_api()
         device_list = []
         for devise in devise_info[api]:
             device_list.append(devise["name"])
-        self.combobox2.config(values=device_list)
+        self.device_selecter.config(values=device_list)
 
-class Frame2(tk.Frame):
+class InputMoniter(tk.Frame):
+    """
+    入力波形とレベルを表示してマイクの感度を調整するための画面
+    """
     def __init__(self, master=None):
+        # ルート画面の設定継承
         super().__init__(master)
         self.master = master
+        self.rec_status: bool = False
 
-        self.fs = 44100
-        self.downsample = 1
-        self.signal_datatype = "float32"
-        self.channels = 2
-        self.rec_status = False
-        self.level_buff = np.empty((1,2))
-        self.level_disp_mean_sample = int(self.fs * 0.25)
-
-        sd.default.samplerate = self.fs
-        sd.default.channels = self.channels
-
+        # ウィジットの作成と配置
         self.setting_widgets()
 
     def setting_widgets(self):
 
-        # 波形プロット
+        #　入力波形表示ウィジット
         self.fig = self.init_wave_plot()
         self.canvas = FigureCanvasTkAgg(self.fig, self)
         self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH,
                                         expand=True)
 
-        # 瞬時レベル表示
+        # 瞬時レベル表示ウィジット
         self.lever_meter = tk.Frame(self)
         self.lever_meter.pack(pady=20)
 
-        self.CH1_val = tk.StringVar(value="0")
-        self.CH2_val = tk.StringVar(value="0")
+        # 初期値
+        self.ch1_val = tk.StringVar(value="0")
+        self.ch2_val = tk.StringVar(value="0")
 
         lb1 = tk.Label(self.lever_meter,text="ch1")
         lb2 = tk.Label(self.lever_meter,text="ch2")
         lb_dB1 = tk.Label(self.lever_meter, text='[dB] ')
         lb_dB2= tk.Label(self.lever_meter, text='[dB] ')
 
-        self.CH1_disp = tk.Entry(self.lever_meter,width=5,bg="white",textvariable=self.CH1_val,fg="black")
-        self.CH2_disp = tk.Entry(self.lever_meter,width=5,bg="white",textvariable=self.CH2_val,fg="black")
+        self.ch1_disp = tk.Entry(self.lever_meter,width=5,bg="white",textvariable=self.ch1_val,fg="black")
+        self.ch2_disp = tk.Entry(self.lever_meter,width=5,bg="white",textvariable=self.ch2_val,fg="black")
 
+        # ウィジット配置
         lb1.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-        self.CH1_disp.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.ch1_disp.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         lb_dB1.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         lb2.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-        self.CH2_disp.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.ch2_disp.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         lb_dB2.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
-        # スタートボタンその1
+        # リアルタイム表示スタートボタン
         self.button_text = tk.StringVar(value="Adjust start")
         self.adj_start_button = tk.Button(self.lever_meter, textvariable=self.button_text, command=self.adj_click)
         self.adj_start_button.pack(side=tk.LEFT,fill=tk.X)
 
-        self.setting = tk.Frame(self)
-        self.setting.pack(pady=20)
+        # レベル表示平均化時間設定ウィジット
+        self.lv_disp_setting = tk.Frame(self)
+        self.lv_disp_setting.pack(pady=20)
 
-        lb3 = tk.Label(self.setting,text=" cal mean time ")
-        lb4 = tk.Label(self.setting,text="[sec] ")
-        self.mean_time_sec = tk.StringVar(value="5.0")
-        self.set_mean_time = tk.Entry(self.setting,width=5,bg="white",textvariable=self.mean_time_sec,fg="black")
-
-        self.cal_button_text = tk.StringVar(value="Check start")
-        self.cal_start_button = tk.Button(self.setting, textvariable=self.cal_button_text,command=self.check_click)
+        lb3 = tk.Label(self.lv_disp_setting,text=" level mean time ")
+        lb4 = tk.Label(self.lv_disp_setting,text="[sec] ")
+        self.lv_mean_sec_val = tk.StringVar(value="0.3")
+        self.set_lv_mean_sec = tk.Entry(self.lv_disp_setting,width=5,bg="white",textvariable=self.lv_mean_sec_val,fg="black")
 
         lb3.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-        self.set_mean_time.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.set_lv_mean_sec.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         lb4.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        # check平均化時間設定ウィジット
+        self.cal_mean_setting = tk.Frame(self)
+        self.cal_mean_setting.pack(pady=20)
+
+        lb5 = tk.Label(self.cal_mean_setting,text=" cal mean time ")
+        lb6 = tk.Label(self.cal_mean_setting,text="[sec] ")
+        self.cal_mean_sec = tk.StringVar(value="5.0")
+        self.set_cal_mean_sec = tk.Entry(self.cal_mean_setting,width=5,bg="white",textvariable=self.cal_mean_sec,fg="black")
+
+        self.cal_button_text = tk.StringVar(value="Check start")
+        self.cal_start_button = tk.Button(self.cal_mean_setting, textvariable=self.cal_button_text,command=self.check_click)
+
+        lb5.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.set_cal_mean_sec.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        lb6.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         self.cal_start_button.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
         # device設定へ戻るボタン
         self.ret_button_text = tk.StringVar(value="Return device setting")
-        self.ret_button = tk.Button(self, textvariable=self.ret_button_text, command=self.master.return_device_setting)
+        self.ret_button = tk.Button(self, textvariable=self.ret_button_text, command=self.master.return_DeviceSetting)
         self.ret_button.pack(side=tk.TOP,fill=tk.X)
 
     def init_wave_plot(self):
         fig = plt.figure(figsize=(5, 2),facecolor="#f0f0f0")
         self.ax1 = fig.add_subplot(2, 1, 1)
         self.ax2 = fig.add_subplot(2, 1, 2)
-        self.length = int(1000 * self.fs / (1000 * self.downsample))
+        self.length = int(sd.default.samplerate)
         self.plotdata = np.zeros((self.length,2))
         self.line1, = self.ax1.plot(self.plotdata[:,0],color="lightgreen")
         self.line2, = self.ax2.plot(self.plotdata[:,1],color="lightgreen")
-        # ax1.axes.xaxis.set_visible(False)
-        # ax2.axes.xaxis.set_visible(False)
         self.ax1.axes.xaxis.set_ticks([])
         self.ax2.axes.xaxis.set_ticks([])
-        # ax1.axes.yaxis.set_ticks([])
-        # ax2.axes.yaxis.set_ticks([])
         self.ax1.set_facecolor("gray")
         self.ax2.set_facecolor("gray")
         self.ax1.set_ylabel("ch1 signal")
@@ -150,27 +171,33 @@ class Frame2(tk.Frame):
 
     def callback(self, indata, frames, time, status):
 
-        data = indata[::self.downsample]
+        data = indata[::1]
         shift = len(data)
         self.plotdata = np.roll(self.plotdata, -shift, axis=0)
         self.plotdata[-shift:] = data
 
-        self.level_buff = np.concatenate([self.level_buff,indata],axis=0)
-        if len(self.level_buff) >= self.level_disp_mean_sample:
+        self.level_buff.extend(indata)
+        self.indata_len_count += len(indata)
+
+        if self.indata_len_count >= self.lv_mean_sec:
+            level = np.array(self.level_buff)
+            # # 0除算で出してくる警告は無視する
             with np.errstate(divide='ignore'):
-                l1 = 10*np.log10(np.mean(np.abs(indata[:,0])))
-                l2 = 10*np.log10(np.mean(np.abs(indata[:,1])))
-            self.CH1_val.set(f"{l1:.2f}")
-            self.CH2_val.set(f"{l2:.2f}")
+                level = 10*np.log10(np.mean(np.abs(level),axis=0))
+            # レベル表示の値を更新
+            self.ch1_val.set(f"{level[0]:.2f}")
+            self.ch2_val.set(f"{level[1]:.2f}")
+            # 配列初期化
+            self.level_buff.clear()
+            self.indata_len_count = 0
 
-            if l1 != -float('inf') and l2 != -float('inf') and np.abs(l1-l2) < 0.5:
-                self.CH1_disp["bg"] ="lightgreen"
-                self.CH2_disp["bg"] ="lightgreen"
-            else:
-                self.CH1_disp["bg"] ="orange"
-                self.CH2_disp["bg"] ="orange"
-
-            self.level_buff = np.empty((1,2))
+            if level[0] != -float('inf') and level[1] != -float('inf'):
+                if np.abs(level[0]-level[1]) < 0.3:
+                    self.ch1_disp["bg"] ="lightgreen"
+                    self.ch2_disp["bg"] ="lightgreen"
+                else:
+                    self.ch1_disp["bg"] ="orange"
+                    self.ch2_disp["bg"] ="orange"
 
     def update_plot(self, frame):
         self.line1.set_ydata(self.plotdata[:,0])
@@ -178,14 +205,26 @@ class Frame2(tk.Frame):
         return self.line1, self.line2
 
     def adj_click(self):
+        try:
+            self.lv_mean_sec = float(self.lv_mean_sec_val.get())*sd.default.samplerate
+        except ValueError:
+            messagebox.showerror("error", "数値を入力して下さい")
+            return False
+
+        if self.lv_mean_sec <= 0 or self.lv_mean_sec > 3*sd.default.samplerate:
+            messagebox.showerror("error", "0 < level mean time < 3")
+            return False
+
         if not self.rec_status:
             self.adj_start_button['state'] = 'disabled'
             self.ret_button['state'] =  'disabled'
             self.cal_start_button['state'] =  'disabled'
+            self.set_lv_mean_sec['state'] =  'disabled'
+            self.set_cal_mean_sec['state'] =  'disabled'
 
+            self.level_buff = []
+            self.indata_len_count = 0
             self.stream = sd.InputStream(
-            channels = self.channels,
-            dtype =self.signal_datatype,
             callback =self.callback)
 
             thread = threading.Thread(target=self.adj_on)
@@ -198,12 +237,11 @@ class Frame2(tk.Frame):
             thread.start()
 
     def adj_on(self):
-
-            self.rec_status = True
-            self.button_text.set("Adjust stop")
-            self.stream.start()
-            self.ani = FuncAnimation(self.fig, self.update_plot, interval=50, blit=True,cache_frame_data=False)
-            self.adj_start_button['state'] = 'normal'
+        self.rec_status = True
+        self.button_text.set("Adjust stop")
+        self.stream.start()
+        self.ani = FuncAnimation(self.fig, self.update_plot, interval=250, blit=True,cache_frame_data=False)
+        self.adj_start_button['state'] = 'normal'
 
     def adj_off(self):
         self.ani.event_source.stop()
@@ -215,17 +253,18 @@ class Frame2(tk.Frame):
         self.adj_start_button['state'] = 'normal'
         self.ret_button['state'] =  'normal'
         self.cal_start_button['state'] =  'normal'
-        self.level_buff = np.empty((1,2))
+        self.set_lv_mean_sec['state'] =  'normal'
+        self.set_cal_mean_sec['state'] =  'normal'
 
     def check_click(self):
         try:
-            mean_time = float(self.set_mean_time.get())
+            mean_time = float(self.set_cal_mean_sec.get())
         except ValueError:
             messagebox.showerror("error", "数値を入力して下さい")
             return False
 
-        if mean_time < 0 or mean_time > 100:
-            messagebox.showerror("error", "0 < INPUT < 100")
+        if mean_time < 1 or mean_time > 30:
+            messagebox.showerror("error", "1 <= cal mean time <= 30")
             return False
 
         self.adj_start_button['state'] = 'disabled'
@@ -233,37 +272,25 @@ class Frame2(tk.Frame):
         self.cal_start_button['state'] =  'disabled'
         self.cal_button_text.set("Wait...")
         self.update()
-
-        recdata = sd.rec(int(mean_time * self.fs),channels = self.channels)
+        mean_time = int(mean_time * sd.default.samplerate)
+        recdata = sd.rec(mean_time)
         sd.wait()
-
-        # self.line1.remove()
-        # self.line2.remove()
-        # self.line1, = self.ax1.plot(recdata[:,0],color="magenta")
-        # self.line2, = self.ax2.plot(recdata[:,1],color="magenta")
-        # self.ax1.set_xlim([0, len(recdata)])
-        # self.ax2.set_xlim([0, len(recdata)])
-        # self.canvas.draw()
-        # self.chack_status = True
 
         self.adj_start_button['state'] = 'normal'
         self.ret_button['state'] =  'normal'
         self.cal_start_button['state'] =  'normal'
         self.cal_button_text.set("Check start")
-        self.master.trangit_frame3(recdata,self.fs)
+        self.master.trangit_DispCheckResult(recdata)
         del recdata
 
-class Frame3(tk.Frame):
-    def __init__(self, recdata, fs, master=None):
+class DispCheckResult(tk.Frame):
+    def __init__(self, recdata, master=None):
         super().__init__(master)
         self.master = master
         self.recdata = recdata
-        self.fs = fs
         self.setting_widgets()
         del self.recdata
-        del self.fs
         del recdata
-        del fs
 
     def setting_widgets(self):
         # 録音波形波形プロット
@@ -272,8 +299,8 @@ class Frame3(tk.Frame):
         self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH,
                                         expand=True)
 
-        ch1_L = cal_CPB_level(self.recdata[:,0], self.fs)
-        ch2_L = cal_CPB_level(self.recdata[:,1], self.fs)
+        ch1_L = cal_CPB_level(self.recdata[:,0], sd.default.samplerate)
+        ch2_L = cal_CPB_level(self.recdata[:,1],sd.default.samplerate)
         diff_L = [x - y if x - y > 0 else x - y for x, y in zip(ch1_L, ch2_L)]
 
         self.disp_result = tk.Frame(self)
@@ -397,7 +424,7 @@ class Frame3(tk.Frame):
 
         # frame2へ戻るボタン
         self.ret_button_text = tk.StringVar(value="Return adjust moniter")
-        self.ret_button = tk.Button(self, textvariable=self.ret_button_text, command=self.master.return_frame2)
+        self.ret_button = tk.Button(self, textvariable=self.ret_button_text, command=self.master.return_InputMoniter)
         self.ret_button.pack(side=tk.BOTTOM,fill=tk.X)
 
     def make_wave_chart(self):
@@ -424,44 +451,47 @@ class Frame3(tk.Frame):
 
         return fig
 
-class Root(tk.Tk):
-    # 呪文
+class ApplicationRoot(tk.Tk):
+
     def __init__(self):
+        # ウィンドウの共通設定
         tk.Tk.__init__(self)
         self.title("sound gain check")
-        self.geometry("400x400")
+        self.geometry("400x500")
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
 
-        self.frame1 = Frame1(self)
+        # ×ボタンがクリックされた際の処理を定義
+        self.protocol("WM_DELETE_WINDOW",self.quit_app)
+
+        # 最初にデバイス選択画面を表示
+        self.frame1 = DeviceSetting(self)
         self.frame1.grid(row=0, column=0, sticky="nsew")
         self.frame1.tkraise()
 
-        self.protocol("WM_DELETE_WINDOW",self.quit_app)
-
-    def trangit_frame2(self, api ,device_name):
+    def trangit_InputMoniter(self, api ,device_name):
         if api == '':
             messagebox.showerror("error", "please select soundclass")
         elif device_name == '':
             messagebox.showerror("error", "please select sound device")
         else:
-            sd.default.device = get_sound_device_id(api ,device_name)
-            self.frame2 = Frame2(self)
+            sd.default.device, sd.default.samplerate = get_sound_device_id(api ,device_name)
+            self.frame2 = InputMoniter(self)
             self.frame2.grid(row=0, column=0, sticky="nsew")
             self.frame2.tkraise()
 
-    def trangit_frame3(self,recdata,fs):
-        self.frame3 = Frame3(recdata,fs ,master=self)
+    def trangit_DispCheckResult(self,recdata):
+        self.frame3 = DispCheckResult(recdata,master=self)
         self.frame3.grid(row=0, column=0, sticky="nsew")
         self.frame3.tkraise()
 
-    def return_device_setting(self):
+    def return_DeviceSetting(self):
         self.frame1.tkraise()
         if "stream" in locals():
             self.frame2.stream.close()
         self.frame2.destroy()
 
-    def return_frame2(self):
+    def return_InputMoniter(self):
         self.frame2.tkraise()
         self.frame3.destroy()
 
@@ -474,12 +504,13 @@ def get_sound_device_id(api ,device_name):
     for device in sd.query_devices():
         if device["name"] == device_name:
             d_buff.append(device["index"])
+            samplelate = device["default_samplerate"]
     for api_list in sd.query_hostapis():
         if api_list["name"] == api:
             api_devices_id = api_list["devices"]
     for id in d_buff:
         if id in api_devices_id:
-            return id
+            return id, samplelate
 
     return False
 
@@ -541,7 +572,7 @@ def cal_CPB_level(recdata, fs):
     return ret
 
 if __name__ == "__main__":
-    app = Root()
+    sd.default.channels = 2
+    sd.default.dtype =  "float32"
+    app = ApplicationRoot()
     app.mainloop()
-=======
->>>>>>> 14f33755de067213ce573c9973f78f9d29d5d1d0
